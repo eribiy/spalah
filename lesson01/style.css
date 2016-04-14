@@ -7,20 +7,100 @@ body {
     background-color: black;
     height: 100px;
 }
-.header_nav {
-    background-color: gray;
+.center {
     width: 80%;
     margin: auto;
+}
+.header_nav {
+    background-color: gray;
     height: 100%;
+    position: relative;
 }
 .nav_links {
+    display: block;
+    position: absolute;
     color: white;
-    float: right;
-    margin: 10px 20px;
+    top: 10px;
+    right: 20px;
 }
 a {
     text-decoration: none;
 }
 .nav_links a {
     color: white;
+}
+.logo {
+    position: relative;
+    background-color: mediumaquamarine;
+    width: 100px;
+    height: 60%;
+    text-align: center;
+    left: 30px;
+    top: 20%;
+}
+.before {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.inner {
+    display: inline-block;
+    vertical-align: middle;
+}
+.logo_text {
+    font-size: 2em;
+    color: gray;
+}
+.main {
+    position: relative;
+}
+.green {
+    background: linear-gradient(to bottom, green, white);
+    height: 100px;
+    position: absolute;
+    width: 100%;
+}
+.content {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 80%;
+}
+.blue {
+    background: linear-gradient(to bottom, skyblue, white);
+    height: 100px;
+    position: relative;
+}
+aside {
+    float: left;
+    width: 25%;
+}
+aside h2 {
+    margin-top: 30px;
+    margin-left: 20px;
+    font-size: 12pt;
+}
+aside li {
+    list-style-type: none;
+    font-size: 0.5em;
+    margin-bottom: 10px;
+}
+aside img {
+    width: 50px;
+    height: 40px;
+    float: left;
+    margin: 0 5px 5px 0;
+}
+aside a {
+    color: black;
+}
+aside ul {
+    margin-left: -20px;
+}
+.main_inner {
+    border: 1px solid red;
+}
+.inner_links {
+    color: darkblue;
+    margin: auto;
 }
