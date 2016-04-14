@@ -1,16 +1,26 @@
-.a header {
-background:black;
-width:1024px;
+body {
+    width: 1000px;
+    margin: auto;
+    font-family: sans-serif;
 }
-
-.a header {
-background:grey;
-width:800px;
-
+.header {
+    background-color: black;
+    height: 100px;
 }
-
-div {
-width:100px;
-background:blue;
-
+.header_nav {
+    background-color: gray;
+    width: 80%;
+    margin: auto;
+    height: 100%;
+}
+.nav_links {
+    color: white;
+    float: right;
+    margin: 10px 20px;
+}
+a {
+    text-decoration: none;
+}
+.nav_links a {
+    color: white;
 }
