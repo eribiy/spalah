@@ -72,7 +72,10 @@ a {
     position: relative;
 }
 aside {
+    /*
     float: left;
+    */
+    position: absolute;
     width: 25%;
 }
 aside h2 {
@@ -98,9 +101,25 @@ aside ul {
     margin-left: -20px;
 }
 .main_inner {
-    border: 1px solid red;
+    position: absolute;
+    right: 0;
+    width: 73%;
 }
 .inner_links {
+    text-align: center;
+}
+.inner_links a {
     color: darkblue;
-    margin: auto;
+    font-size: 14pt;
+    margin-left: 20px;
+}
+.inner_text {
+    padding-right: 50px;
+}
+.inner_text h1 {
+    font-size: 14pt;
+}
+.inner_text p {
+    font-size: 10pt;
+    text-align: justify;
 }
