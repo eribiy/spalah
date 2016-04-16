@@ -12,7 +12,7 @@ body {
     margin: auto;
 }
 .header_nav {
-    background-color: gray;
+    background-color: #727272;
     height: 100%;
     position: relative;
 }
@@ -31,7 +31,7 @@ a {
 }
 .logo {
     position: relative;
-    background-color: mediumaquamarine;
+    background-color: #09bfa8;
     width: 100px;
     height: 60%;
     text-align: center;
@@ -55,7 +55,7 @@ a {
     position: relative;
 }
 .green {
-    background: linear-gradient(to bottom, green, white);
+    background: linear-gradient(to bottom, #60911c, white);
     height: 100px;
     position: absolute;
     width: 100%;
@@ -67,14 +67,12 @@ a {
     width: 80%;
 }
 .blue {
-    background: linear-gradient(to bottom, skyblue, white);
+    background: linear-gradient(to bottom, #7bbab2, white);
     height: 100px;
     position: relative;
 }
 aside {
-    /*
-    float: left;
-    */
+
     position: absolute;
     width: 25%;
 }
@@ -100,13 +98,18 @@ aside a {
 aside ul {
     margin-left: -20px;
 }
+aside li {
+    margin-bottom: 30px;
+}
 .main_inner {
     position: absolute;
     right: 0;
     width: 73%;
+    margin-top: 25px;
 }
 .inner_links {
     text-align: center;
+    margin-top: 15px;
 }
 .inner_links a {
     color: darkblue;
@@ -117,9 +120,15 @@ aside ul {
     padding-right: 50px;
 }
 .inner_text h1 {
+    font-size: 16pt;
+}
+.inner_text h2 {
     font-size: 14pt;
 }
 .inner_text p {
-    font-size: 10pt;
+    font-size: 8pt;
     text-align: justify;
+}
+article {
+    margin-bottom: 40px;
 }
