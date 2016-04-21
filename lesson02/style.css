@@ -41,11 +41,6 @@ form {
     border-left: 1px solid #d9d9d9;
     box-shadow: inset 10px 2px 0px -9px rgba(255, 255, 255, 1);
 }
-/*.search{
-    display: block;
-    padding: 0  30px;
-}
-*/
 .inp {
     width: 290px;
     font-style: italic;
@@ -79,7 +74,6 @@ button {
 .logo_slogan {
     min-height: 7em;
     overflow: hidden;
-    /*padding-bottom: -65px;*/ /*Why it dose not work?*/
 }
 .logo {
     width: 197px;
@@ -151,8 +145,6 @@ button {
     background: #f1f1f1;
     border: 1px solid #d9d9d9;
     box-sizing: border-box;
-    /*-webkit-box-shadow: inset 0px 0px 0px 1px rgba(255,255,255,1);
-    -moz-box-shadow: inset 0px 0px 0px 1px rgba(255,255,255,1);*/
     box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 1);
     border-radius: 30px;
     margin-bottom: 15px;
@@ -177,8 +169,6 @@ button {
     background: #f1f1f1;
     border: 1px solid #d9d9d9;
     box-sizing: border-box;
-    /*-webkit-box-shadow: inset 0px 0px 0px 1px rgba(255,255,255,1);
-    -moz-box-shadow: inset 0px 0px 0px 1px rgba(255,255,255,1);*/
     box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 1);
     border-radius: 30px;
     font-size: 12px;
@@ -220,8 +210,6 @@ footer {
     border-radius: 30px;
     border: 1px solid #d9d9d9;
     box-sizing: border-box;
-    /*-webkit-box-shadow: inset 0px 0px 0px 1px rgba(255,255,255,1);
-    -moz-box-shadow: inset 0px 0px 0px 1px rgba(255,255,255,1);*/
     box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 1);
 }
 .foot p {
