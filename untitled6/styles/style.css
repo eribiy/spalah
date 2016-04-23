@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+.header-bg {
+    background: #2a2a36;
+}
+
+.header {
+    width: 980px;
+    margin: 0 auto;
+    padding: 17px 8px;
+}
+
+.block {
+    width: 300px;
+    height: 300px;
+    background: red;
+    margin: 0 auto;
+}
+
+.logo-wrapper {
+    float: left;
+}
+
+.logo {
+    display: block;
+    color: #a5adb8;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 27px;
+}
+.logo span {
+    color: #ae4b5d;
+}
+.sub-logo {
+    color: #656f7a;
+    font-size: 12px;
+}
+.form-wrapper {
+    float: right;
+}
+.search {
+    border: 1px solid #875f66;
+    border-radius: 4px;
+    background: #24272d;
+    color: #5b636e;
+    margin-top: 2px;
+    padding: 10px 10px 7px 10px;
+    width: 197px;
+}
+.search::-webkit-input-placeholder {
+    color: #5b636e;
+}
+.search-button {
+    background: url("../img/sprite.png") no-repeat;
+    background-color: #ae4b5d;
+    background-position: -2px 11px;
+    width: 20px;
+    height: 20px;
+    margin-left: 6px;
+    margin-top: 2px;
+    padding: 19px 19px 15px 19px;
+    vertical-align: top;
+    border: none;
+    border-radius: 4px;
+}
+.content-bg{
+    background: #e7e6e2;
+}
+.content_main {
+    position: relative;
+    width: 980px;
+    margin: 0 auto;
+}
+.content_main img {
+    display:block;
+    width: 100%;
+}
+.content {
+    position: absolute;
+    top: 38px;
+    left: 37px;
+}
+.logo_2 {
+    color: #a5adb8;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 27px;
+}
+.logo_2 span {
+    color: #ae4b5d;
+}
+.content_text1 {
+    font-size: 18px;
+    color: #282b34;
+    margin-top: 4px;
+    margin-bottom: 17px;
+}
+.content_text2 {
+/*    display:inline-block;*/
+    font-size: 18px;
+    color:#e3e5e5;
+    font-weight: 700;
+
+}
+.content_text3 {
+    font-size: 14px;
+    line-height: 18px;
+    color:#e3e4e6;
+    width: 490px;
+    margin-top:7px;
+}
+.wrapper_links{
+    background: #95161f;
+    overflow: hidden;
+}
+.links{
+    display: inline-block;
+    float: right;
+    font-size: 0px;
+}
+.wrapper_links a {
+    font-size: 12pt;
+    font-weight:600;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 23px;
+}
