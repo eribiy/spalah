@@ -26,6 +26,9 @@
     margin: 20px 0;
     float:left;
 }
+ a {
+     text-decoration: none;
+ }
 .logo, .text_header_wide {
     display:inline-block;
     float:left;
@@ -59,11 +62,11 @@ form {
     padding: 1px 5px;
 }
 .button_1 {
-    background:#ae4b5d; 
+    background: #ae4b5d;
     border-radius: 5px;
-    border:none;
+    border: none;
     font-size: 14pt;
-    color: white;/*������ �� ���������� ���� ����?*/
+    color: white;
 }
 .header {
     background: url(images/cherry.jpg);
