@@ -119,7 +119,7 @@ body {
 .links{
     display: inline-block;
     float: right;
-    font-size: 0px;
+    font-size: 0;
 }
 .wrapper_links a {
     font-size: 12pt;
@@ -128,4 +128,72 @@ body {
     text-decoration: none;
     display: inline-block;
     padding: 12px 23px;
+}
+
+
+
+.footer-bg {
+    background: #2a3136;
+    border-top: 8px solid #ae4b5d;
+}
+.footer {
+    width: 980px;
+    margin: 0 auto;
+}
+.footer-col {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 35px;
+    margin-left: 74px;
+}
+.footer-col:first-child {
+    margin-left: 10px;
+}
+.head_line {
+    border-bottom: 1px solid #5d6b6b;
+    padding-bottom: 8px;
+    width:270px;
+    margin-bottom: 7px;
+}
+.footer-head, .footer-head-cherry {
+    display:inline-block;
+    font-size:18px;
+    text-transform: capitalize;
+    color:#a5adb8;
+}
+.footer-head-cherry {
+    text-transform: uppercase;
+}
+.footer-head-cherry:first-letter {
+    color: #ae4b5d;
+}
+.footer-text {
+    color:#85898f;
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: capitalize;
+}
+.clock::before {
+    content: '';
+    display: inline-block;
+    background: url("../img/sprite.png") no-repeat;
+    background-position: -64px 0;
+    vertical-align: top;
+    width: 16px;
+    height: 16px;
+}
+.li {
+    list-style: disc;
+    color: #ae4b5d;
+    margin-left: 17px;
+    padding-left: 4px;
+}
+.mail {
+    color: #ae4b5d;
+    text-transform: none;
+}
+.text-wide {
+    font-weight: 600;
+    font-size: 14px;
+    color: #a5adb8;
 }
