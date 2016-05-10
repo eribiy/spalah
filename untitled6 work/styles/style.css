@@ -195,27 +195,27 @@ body {
 }
 .inp_1 {
     display: inline-block;
-    margin: 7.5px 0;
+    margin: calc(15px/2) 0;
     background: #e3e4e5;
     border: 2px solid #ffffff;
     border-radius: 3px;
     box-sizing: border-box;
     width: 185px;
     height: 33px;
-    padding: 0px 8px;
+    padding: 0 8px;
     text-transform: capitalize;
     color:#757575;
 }
 .inp_2 {
     display: inline-block;
-    margin: 7.5px 0;
+    margin: calc(15px/2) 0;
     background: #e3e4e5;
     border: 1px solid #a2a2a2;
     border-radius: 3px;
     box-sizing: border-box;
     width: 185px;
     height: 33px;
-    padding: 0px 8px;
+    padding: 0 8px;
     text-transform: capitalize;
     color:#757575;
 }
