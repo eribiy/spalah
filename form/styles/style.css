@@ -82,6 +82,9 @@ body {
 .login {
     display: none;
 }
+/*.register {
+    display: none;
+}*/
 .arrow_box:after {
     border-color: rgba(254, 254, 254, 0);
     border-bottom-color: #fefefe;
@@ -99,11 +102,8 @@ body {
     border-radius: 7px;
     background: #fefefe;
     margin: 73px 30px 0 30px;
-    padding: 43px 35px 40px 40px;
+    padding: 43px 35px 32px 40px;
 
-}
-.wrapper_title_2 {
-    padding-bottom: 50px;
 }
 .title_2 {
     display: inline-block;
@@ -117,16 +117,17 @@ body {
 .wrapper_social {
     display:inline-block;
     vertical-align: top;
+    margin-top: 56px;
     margin-bottom: 60px;
-    margin-right: 60px;
-    width: 230px;
+    width: 344px;
+    border-right: 1px solid #dfdfdf;
 }
 .facebook, .twitter  {
     display:inline-block;
-    margin-bottom: 30px;
+    margin-bottom: 48px;
     border-radius: 5px;
-    width: 230px;
-    font-size: 14px;
+    width: 289px;
+    font-size: 16px;
     color: #ffffff;
     text-transform: capitalize;
 }
@@ -134,24 +135,26 @@ body {
     background: #3c5a98;
 }
 .social_big {
-    font-size: 18px;
+    display: inline-block;
+    font-size: 23px;
     font-weight: 600;
+    vertical-align: baseline;
 }
 .twitter {
     background: #00abf0;
 }
 .i_face, .i_twit {
-    padding: 14px 0;
-    width: 43px;
+    padding: 13px 0;
+    width: 60px;
     text-align: center;
-    border-radius: inherit;
-    margin-right: 10px;
+    border-radius: 5px 0 0 5px;
+    margin-right: 21px;
 }
 .i_face {
-    background: blue;
+    background: #324e89;
 }
 .i_twit {
-    background: darkblue;
+    background: #009ad9;
 }
 .wrapper_inp {
     display: inline-block;
@@ -159,24 +162,53 @@ body {
 }
 .text {
     font-size: 16px;
+    color: #c1c1c1;
     text-transform: capitalize;
 }
+.text_1 {
+    display: inline-block;
+    padding: 25px 0 0 38px;
+}
 .text_up {
+    display: inline-block;
+    position: absolute;
+    top: 145px;
+    right: 335px;
+    background: #fefefe;
+    font-size: 14px;
+    text-transform: uppercase;
     vertical-align: 0.5em;
 }
+.text_2 {
+    display: inline-block;
+    padding: 18px 0 0 38px;
+}
 .inp {
-    width: 230px;
-    height: 30px;
-    margin: 20px 0;
+    width: 312px;
+    height: 50px;
+    margin: 20px 0 20px 35px;
+    padding: 0 10px;
+    border: 1px solid #dfdfdf;
+    border-radius: 7px;
+    font-size: 16px;
+    color:#c1c1c1;
 }
-.but {
-    padding: 10px 15px;
-    background: green;
+.button {
+    margin-top: 8px;
+    padding: 16px 55px;
+    background: #6bbe92;
     border: none;
-}
-#register_box {
-    /*display: none;*/
+    border-radius: 5px;
+    float: right;
+    font-size: 21px;
+    color: #ffffff;
+    text-transform: capitalize;
 }
 .register:after, .register:before {
-    left: 60%;
+    left: 65%;
+}
+.wrapper_inp {
+    display: inline-block;
+    position: relative;
+    width: calc(100% - 344px);
 }
