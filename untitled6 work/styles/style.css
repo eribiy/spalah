@@ -208,6 +208,10 @@ body {
     display: inline-block;
     margin: calc(15px/2) 0;
     background: #e3e4e5;
+    background-image: url("../img/1.png");
+    background-position: 95% 50%;
+    background-repeat: no-repeat;
+    background-size: 15px;
     border: 1px solid #a2a2a2;
     border-radius: 3px;
     box-sizing: border-box;
@@ -216,6 +220,14 @@ body {
     padding: 0 8px;
     text-transform: capitalize;
     color:#757575;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+select::-ms-expand {
+    display: none;
 }
 .contact_button {
     margin-bottom: 15px;
