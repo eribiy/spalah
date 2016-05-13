@@ -1,0 +1,48 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0;
+}
+.wrapper {
+
+}
+.header_wrap {
+    padding-bottom: 20px;
+
+    background: #423535;
+}
+.header_bg {
+    background: #ffffff;
+}
+.header {
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+}
+.logo_wrap {
+    display: inline-block;
+    margin: 18px 0 0 11px;
+}
+.logo_wrap a {
+
+}
+.wrapper_nav {
+    display: inline-block;
+    margin: 2px 0 0 28px;
+
+}
+.nav {
+    padding: 10px 17px;
+
+    font-size: 18px;
+    color: #f26722;
+    text-transform: uppercase;
+}
+.icons_wrap {
+
+}
+.icon {
+
+    font-size: 18px;
+    color: #a29f9f;
+}
