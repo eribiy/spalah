@@ -339,3 +339,12 @@ a {
 .j-click.collapps{
     display: block;
 }
+.multiple-items {
+    width: 600px;
+    margin: 0 auto;
+}
+.content {
+    padding: 20px 30px;
+    margin: 0 20px;
+    background: green;
+}
