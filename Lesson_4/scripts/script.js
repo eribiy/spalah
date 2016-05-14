@@ -12,3 +12,7 @@ $(document).ready(function(){
             slidesToScroll: 3
         });
 });
+/*
+$(document).ready(function(){
+    $('.select').niceSelect();
+});*/
