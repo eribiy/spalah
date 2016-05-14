@@ -1,0 +1,341 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none
+}
+
+.main {
+    background: #818c93;
+    height: 2160px;
+    width: 100%;
+}
+
+.auth_form {
+    position: relative;
+    display: inline-block;
+    background: #f5f5f5;
+    border-radius: 10px;
+    padding: 67px 28px 29px 29px;
+    width: 827px;
+    left: 50%;
+    font-size: 0;
+    margin-left: -413px;
+}
+
+.auth_heading {
+    font-size: 37px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 59px;
+}
+
+.switch {
+    margin-left: 163px;
+    position: relative;
+    margin-bottom: 61px;
+}
+
+.switch:after {
+    content: "or";
+    position: absolute;
+    left: 156px;
+    bottom: -13px;
+    padding: 30px 27px 29px;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 23px;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    background: #6bbe92;
+}
+
+.switch_btn {
+    border-radius: 5px;
+    font-size: 33px;
+    font-weight: 600;
+    color: #a4a8ab;
+    display: inline-block;
+    background: #707c84;
+    width: 212px;
+    transition: all 0.5s;
+}
+
+.switch_btn:hover {
+    background: #7f8b93;
+    color: #b3b7ba;
+}
+
+.login_btn {
+    text-align: start;
+    padding: 9px 45px 14px;
+}
+
+.register_btn {
+    text-align: end;
+    padding: 8px 38px 14px;
+}
+
+.active {
+    color: #fff;
+    background: #6bbe92;
+}
+
+.active:hover {
+    background: #6bbe92;
+    color: #ffffff;
+}
+
+.login,
+.register {
+    position: relative;
+    background: #fefefe;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    padding: 39px 25px 38px 39px;
+}
+
+.login:before,
+.register:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -12px;
+    left: 230px;
+    transform: rotate(-45deg);
+    background: #fefefe;
+    height: 20px;
+    width: 20px;
+    border-top: 1px solid #dcdcdc;
+    border-right: 1px solid #dcdcdc;
+}
+
+.form_heading {
+    color: #979797;
+    font-size: 25px;
+}
+
+.social_auth {
+    display: table-cell;
+    padding: 54px 0;
+    width: 345px;
+    vertical-align: middle;
+}
+
+.socials_btn {
+    display: block;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #ffffff;
+    width: 290px;
+    font-weight: 600;
+    margin-bottom: 48px;
+    transition: all 0.5s;
+}
+
+.social_name {
+    font-size: 25px;
+    font-weight: 800;
+    margin-left: 4px;
+}
+
+.facebook {
+    background: #3c5a98;
+    font-size: 17px;
+}
+
+.fa-facebook {
+    display: inline-block;
+    font-size: 30px;
+    margin-right: 20px;
+    vertical-align: -5px;
+    background: #324e89;
+    border-radius: 10px 0 0 10px;
+    padding: 15px 23px 13px 21px;
+    transition: all 0.5s;
+}
+
+.facebook:hover {
+    background: #3c69a7;
+}
+
+.facebook:hover > .fa-facebook {
+    background: #325d98;
+}
+
+.twitter {
+    background: #00abf0;
+    font-size: 17px;
+}
+
+.fa-twitter {
+    display: inline-block;
+    font-size: 37px;
+    margin-right: 18px;
+    vertical-align: -8px;
+    background: #009ad9;
+    border-radius: 10px 0 0 10px;
+    padding: 12px 13px 9px 15px;
+    transition: all 0.5s;
+}
+
+.twitter:hover {
+    background: #00bbff;
+}
+
+.twitter:hover > .fa-twitter {
+    background: #00a8e8;
+}
+
+.login_form,
+.register_form {
+    position: relative;
+    display: table-cell;
+    vertical-align: top;
+    padding: 22px 0 0 36px;
+    box-shadow: -28px 14px 0 -27px rgba(223, 223, 223, 1);
+}
+
+.login_form:after,
+.register_form:after {
+    content: "OR";
+    padding: 5px 0;
+    position: absolute;
+    display: inline-block;
+    color: #a3a3a3;
+    font-size: 15px;
+    font-weight: 600;
+    top: 43%;
+    left: -10px;
+    background-color: #fefefe;
+}
+
+.form_description {
+    display: block;
+    font-size: 17px;
+    font-weight: 600;
+    color: #a3a3a3;
+    margin-bottom: 20px;
+    margin-left: 3px;
+}
+
+.input {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 16px 20px 17px;
+    width: 315px;
+    color: #a3a3a3;
+    border: 1px solid #e2e2e2;
+    background: #f5f5f5;
+    border-radius: 5px;
+    margin-bottom: 29px;
+}
+
+.pass {
+    margin-bottom: 13px;
+}
+
+.form_btn {
+    display: inline-block;
+    float: right;
+    margin-right: 11px;
+    margin-top: -1px;
+    background: #6bbe92;
+    font-weight: 600;
+    font-size: 23px;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 11px 53px 16px 53px;
+    border: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.form_btn:hover {
+    background: #7acda1;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.register > .form_heading {
+    text-align: right;
+    margin-right: 14px;
+}
+
+.register:before {
+    left: 490px;
+}
+
+.register .fa-facebook {
+    margin-right: 10px;
+}
+
+.checkbox + label {
+    cursor: pointer;
+}
+
+.checkbox:not(checked) {
+    position: absolute;
+    opacity: 0;
+}
+
+.checkbox:not(checked) + label {
+    position: relative;
+    padding-left: 35px;
+}
+
+.checkbox:not(checked) + label:before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 26px;
+    height: 26px;
+    border-radius: 6px;
+    background: #CDD1DA;
+}
+
+.checkbox:not(checked) + label:after {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 2px;
+    border: 2px solid #FFFFFF;
+    width: 18px;
+    height: 18px;
+    border-radius: 5px;
+    background: #ffffff;
+    transition: all 0.5s;
+}
+
+.checkbox:checked + label:after {
+    background: #6bbe92;
+}
+
+.form_description > a {
+    display: block;
+    color: #6bbe92;
+}
+
+.form_description > a:hover {
+    text-decoration: underline;
+}
+
+.j-click{
+    display: none;
+}
+.j-click.collapps{
+    display: block;
+}
