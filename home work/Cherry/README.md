@@ -1,2 +1,0 @@
-# spalah
-Lessons
