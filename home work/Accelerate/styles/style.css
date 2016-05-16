@@ -3,41 +3,123 @@ body {
     font-size: 0;
 }
 .wrapper {
+    width: 1920px;
+    margin: 0 auto;
 }
 .header_wrap {
-    padding-bottom: 14px;
-
-    background: #423535;
-}
-.header_bg {
     background: #ffffff;
+}
+.header {
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 0 0 11px;
+}
+.logo_wrap {
+    margin-top: 18px;
+}
+.wrapper_nav {
+    margin: 2px 0 0 26px;
+}
+.nav {
+    padding: 10px 17px;
+
+    font-size: 18px;
+    color: #f26722;
+    text-transform: uppercase;
+}
+.icons_wrap {
+    margin: 0 0 0 58px;
+}
+.a_icon {
+    display: inline-block;
+    background: url("../img/sprite.png") no-repeat;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: none;
+}
+.a_icon:first-child{
+    background-position: -27px -16px;
+    margin-right: 23px;
+}
+.a_icon:nth-child(2){
+    background-position: -105px -18px;
+    margin-right: 10px;
+}
+.a_icon:nth-child(3){
+    background-position: -185px -15px;
+    margin-right: 2px;
+}
+.a_icon:last-child {
+    background-position: -270px -19px;
+}
+.wrapper_img_1 {
+    position: relative;
 }
 .block_left, .block_right {
     position: absolute;
+    overflow: hidden;
     width: 55%;
     height: 120px;
     top: 12px;
+    left:-5px;
     z-index: 10;
 
     background: #ffffff;
 }
 .block_left {
-    -moz-transform: rotate(-3deg); /* Для Firefox */
-    -ms-transform: rotate(-3deg); /* Для IE */
-    -webkit-transform: rotate(-3deg); /* Для Safari, Chrome, iOS */
-    -o-transform: rotate(-3deg); /* Для Opera */
+    -moz-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
     transform: rotate(-3deg);
 }
 .block_right {
     left: 50%;
 
-    -moz-transform: rotate(3deg); /* Для Firefox */
-    -ms-transform: rotate(3deg); /* Для IE */
-    -webkit-transform: rotate(3deg); /* Для Safari, Chrome, iOS */
-    -o-transform: rotate(3deg); /* Для Opera */
+    -moz-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    -webkit-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    transform: rotate(3deg);
+}
+/*
+
+.header_wrap {
+    position: relative;
+    background: #ffffff;
+}
+.block_left, .block_right {
+    position: absolute;
+    overflow: hidden;
+    width: 55%;
+    height: 120px;
+    top: 12px;
+    left:-5px;
+    z-index: 10;
+
+    background: #ffffff;
+}
+.block_left {
+    -moz-transform: rotate(-3deg); !* Для Firefox *!
+    -ms-transform: rotate(-3deg); !* Для IE *!
+    -webkit-transform: rotate(-3deg); !* Для Safari, Chrome, iOS *!
+    -o-transform: rotate(-3deg); !* Для Opera *!
+    transform: rotate(-3deg);
+}
+.block_right {
+    left: 50%;
+
+    -moz-transform: rotate(3deg); !* Для Firefox *!
+    -ms-transform: rotate(3deg); !* Для IE *!
+    -webkit-transform: rotate(3deg); !* Для Safari, Chrome, iOS *!
+    -o-transform: rotate(3deg); !* Для Opera *!
     transform: rotate(3deg);
 }
 .header {
+    position: relative;
     display: flex;
     align-items: center;
     width: 1200px;
@@ -45,7 +127,9 @@ body {
     z-index: 20;
 }
 .logo_wrap {
-    margin: 18px 0 0 11px;
+    position: absolute;
+    top: 18px;
+    left: 11px;
     z-index: 20;
 }
 .logo_wrap a {
@@ -87,6 +171,7 @@ body {
     position: relative;
     height: 741px;
     overflow: hidden;
+    z-index: 5;
 
  }
 .img_1 {
@@ -149,4 +234,4 @@ body {
 }
 .span_small:nth-last-child(2){
     text-transform: capitalize;
-}
+}*/

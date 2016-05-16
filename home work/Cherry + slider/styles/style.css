@@ -471,11 +471,11 @@ tr:last-child td:last-child {
 .bx-wrapper .bx-viewport {
     left:0;
 }
-.bx-pager .bx-default-pager {
+/*.bx-pager .bx-default-pager {
     vertical-align: middle;
     padding-top: 0px;
     margin: 20px 0;
-}
+}*/
 .bx-wrapper {
     margin-bottom: 50px;
 }
