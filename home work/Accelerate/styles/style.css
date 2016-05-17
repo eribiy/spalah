@@ -15,12 +15,15 @@ body {
     width: 1200px;
     margin: 0 auto;
     padding: 0 0 0 11px;
+    z-index: 20;
 }
 .logo_wrap {
     margin-top: 18px;
+    z-index: 20;
 }
 .wrapper_nav {
     margin: 2px 0 0 26px;
+    z-index: 20;
 }
 .nav {
     padding: 10px 17px;
@@ -28,9 +31,14 @@ body {
     font-size: 18px;
     color: #f26722;
     text-transform: uppercase;
+    z-index: 20;
+}
+.nav:hover {
+    background: #ffeadf;
 }
 .icons_wrap {
     margin: 0 0 0 58px;
+    z-index: 20;
 }
 .a_icon {
     display: inline-block;
@@ -39,6 +47,7 @@ body {
     height: 30px;
     padding: 0;
     border: none;
+    z-index: 20;
 }
 .a_icon:first-child{
     background-position: -27px -16px;
@@ -49,27 +58,35 @@ body {
     margin-right: 10px;
 }
 .a_icon:nth-child(3){
-    background-position: -185px -15px;
+    background-position: -185px -16px;
     margin-right: 2px;
 }
 .a_icon:last-child {
     background-position: -270px -19px;
 }
+.a_icon:hover {
+    /*придумать что-нибудь*/
+}
 .wrapper_img_1 {
     position: relative;
+    overflow: hidden;
+}
+.img_1 {
+    width:100%;
 }
 .block_left, .block_right {
     position: absolute;
     overflow: hidden;
-    width: 55%;
+    width: 50%;
     height: 120px;
-    top: 12px;
-    left:-5px;
+    top: -95px;
     z-index: 10;
 
     background: #ffffff;
 }
 .block_left {
+    left:-5px;
+
     -moz-transform: rotate(-3deg);
     -ms-transform: rotate(-3deg);
     -webkit-transform: rotate(-3deg);
@@ -77,6 +94,7 @@ body {
     transform: rotate(-3deg);
 }
 .block_right {
+    width: 51%;
     left: 50%;
 
     -moz-transform: rotate(3deg);
@@ -85,129 +103,38 @@ body {
     -o-transform: rotate(3deg);
     transform: rotate(3deg);
 }
-/*
-
-.header_wrap {
-    position: relative;
-    background: #ffffff;
-}
-.block_left, .block_right {
+.wrapper_text_img_1 {
     position: absolute;
-    overflow: hidden;
-    width: 55%;
-    height: 120px;
-    top: 12px;
-    left:-5px;
-    z-index: 10;
+    top: 250px;
+    left: 410px;
+    width: 1100px;
 
-    background: #ffffff;
-}
-.block_left {
-    -moz-transform: rotate(-3deg); !* Для Firefox *!
-    -ms-transform: rotate(-3deg); !* Для IE *!
-    -webkit-transform: rotate(-3deg); !* Для Safari, Chrome, iOS *!
-    -o-transform: rotate(-3deg); !* Для Opera *!
-    transform: rotate(-3deg);
-}
-.block_right {
-    left: 50%;
-
-    -moz-transform: rotate(3deg); !* Для Firefox *!
-    -ms-transform: rotate(3deg); !* Для IE *!
-    -webkit-transform: rotate(3deg); !* Для Safari, Chrome, iOS *!
-    -o-transform: rotate(3deg); !* Для Opera *!
-    transform: rotate(3deg);
-}
-.header {
-    position: relative;
-    display: flex;
-    align-items: center;
-    width: 1200px;
-    margin: 0 auto;
-    z-index: 20;
-}
-.logo_wrap {
-    position: absolute;
-    top: 18px;
-    left: 11px;
-    z-index: 20;
-}
-.logo_wrap a {
-}
-.img_logo {
- }
-.wrapper_nav {
-    display: inline-block;
-    margin: 2px 0 0 28px;
-    z-index: 20;
-}
-.nav {
-    padding: 10px 17px;
-
-    font-size: 18px;
-    color: #f26722;
-    text-transform: uppercase;
-}
-.icons_wrap {
-    margin: 2px 0 0 48px;
-    z-index: 20;
-
-    font-size: 20px;
- }
-.icon {
-    color: #a29f9f;
-}
-.a_icon {
-    padding: 0 10px;
-}
-.a_icon:first-child {
-    margin-right: 10px;
-}
-.a_icon:last-child {
-    padding-right: 0;
-}
-
-.wrapper_img_1 {
-    position: relative;
-    height: 741px;
-    overflow: hidden;
-    z-index: 5;
-
- }
-.img_1 {
-    width:100%;
-   }
-.flex {
-    position:absolute;
-    top: 244px;
-    text-align: center;
-    display: flex;
-}
-.empty {
-    width: calc((100% - 60%) / 2);
-}
-.wrap_text_img_1 {
-    top: 10px;
-    width: 60%;
-
+    font-family: "Microsoft PhagsPa", sans-serif ;
     color: #ffffff;
     text-transform: uppercase;
 }
-.h_1 {
+.h_img_1 {
     text-align: center;
-    margin-bottom: 47px;
+    margin-bottom: 42px;
 
-    font-size: 65px;
-    font-weight: 900;
-
+    font-size: 73px;
+    font-weight: 900;;
 }
-.text_1 {
+.text_img_1 {
     text-align: center;
 
     font-size: 30px;
     font-weight: 600;
     line-height: 1.6em;
 }
+.about_bg {
+
+}
+.wrapper_img_2 {
+   width: 1920px;
+}
+
+/*
 .about_bg {
     background: #ffffff;
 }
