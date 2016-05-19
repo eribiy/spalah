@@ -1,4 +1,46 @@
 .wrapper {
     width: 1600px;
+    margin: 0 auto;
     background: #ffffff;
+}
+.headrer_wrapper {
+    position: relative;
+
+}
+.img_header {
+    width: 100%;
+}
+.header {
+    position: absolute;
+    top: 10px;
+    left: 320px;
+    width: 960px;
+
+    color: #ffffff;
+}
+.logo_small {
+    position: absolute;
+    top: 6px;
+    left: 10px;
+}
+.logotext {
+    position: absolute;
+    top: 17px;
+    left: 65px;
+    padding: 10px 12px;
+}
+.nav {
+    float: right;
+    margin-top: 22px;
+}
+.menu {
+    font-family: "Roboto Light", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #ffffff;
+
+}
+.header_main {
+
 }
