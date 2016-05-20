@@ -22,11 +22,11 @@ body {
     z-index: 20;
 }
 .wrapper_nav {
-    margin: 2px 0 0 26px;
+    margin: 2px 0 0 27px;
     z-index: 20;
 }
 .nav {
-    padding: 10px 17px;
+    padding: 10px 15px;
 
     font-size: 18px;
     color: #f26722;
@@ -128,13 +128,13 @@ body {
     font-weight: 600;
     line-height: 1.6em;
 }
-.text_1_bg {
+.text_bg {
     background: #ffffff;
 }
 .wrapper_text_1 {
     position: relative;
     width: 1200px;
-    margin: 92px auto 263px auto;
+    margin: 90px auto 263px auto;
 }
 .h_text_1 {
     text-align: center;
@@ -146,7 +146,7 @@ body {
     font-weight: 600;
     color: #000000;
 }
-.h_small_text_1 {
+.h_small_text {
     text-align: center;
 
     font-size: 16px;
@@ -160,7 +160,7 @@ body {
     display: inline-block;
     border-right: 1px solid #e5e5e5;
     width: calc(100% / 3);
-    padding: 0 15px;
+    padding: 0 17px;
     vertical-align: top;
 
     color: #776666;
@@ -250,5 +250,130 @@ body {
     text-transform: uppercase;
     color: #ffffff;
     font-size: 22px;
+}
+.wrapper_text_2 {
+    position: relative;
+    width: 1200px;
+    margin: 74px auto 81px auto;
+}
+.wrapper_column_text_2 {
+    margin-top: 80px;
+}
+.column_text_2 {
+    display: inline-block;
+    width: calc(100% / 3);
+    padding: 0 10px;
+    vertical-align: top;
 
+    font-size: 17px;
+    color: #776666;
+}
+/*.column_text_2:last-child {
+    width: 390px;
+}*/
+.li_first_column {
+    display: block;
+    margin-bottom: 44px;
+}
+.a_text_2 {
+    text-decoration: underline;
+    color: #f26722;
+    line-height: 1.5em;
+}
+.wrapper_text_second_column {
+
+}
+.wrapper_text_second_column:first-child {
+    margin-bottom: 20px;
+}
+.a_text_2_second_column {
+    text-decoration: underline;
+    color: #f26722;
+    line-height: 1.2em;
+}
+.text_second_column {
+    line-height: 1.1em;
+    margin: 15px 0 10px 0;
+}
+.data {
+    color:#3b3b3b;
+    font-style: italic;
+}
+.wrapper_twit {
+    position: relative;
+    padding: 26px 50px 43px 37px;
+    width: 370px;
+    background: #1a89b5;
+    color: #ffffff;
+}
+.wrapper_twit:first-child {
+    margin-bottom: 15px;
+}
+.data_twit {
+    font-style: italic;
+}
+.text_twit {
+    margin-top: 20px;
+}
+.twit_icon {
+    display: block;
+    position: absolute;
+    top:10px;
+    right: 10px;
+}
+.wrapper_text_3 {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+.wrapper_column_text_3 {
+    margin-top: 53px;
+}
+.column_text_3 {
+    display: inline-block;
+    width: calc(100% / 3);
+    padding: 0 10px;
+    vertical-align: top;
+
+    font-size: 19px;
+    line-height: 1.6em;
+    color: #776666;
+}
+
+.text_3 {
+
+}
+.button_3 {
+    display: inline-block;
+    position: absolute;
+    top: 345px;
+    left: 465px;
+    background: #ff4900;
+    padding: 23px 61px;
+    margin-bottom: 86px;
+
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 600;
+    color: #ffffff;
+}
+.wrapper_fotter {
+    background: #423536;
+}
+.footer {
+    width: 1200px;
+    margin: 0 auto;
+}
+.wrapper_footer_nav {
+
+}
+.footer_nav {
+    padding: 10px 15px;
+
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.footer_nav:hover {
+    color:  #f26722;
 }
