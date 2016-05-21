@@ -1,0 +1,238 @@
+.wrapper_all {
+    width: 1600px;
+    margin: 0 auto;
+    font-size: 0;
+}
+.header_bg {
+    background-image: url("../images/head.png");
+    width: 1600px;
+    border-top: 10px solid #2ecc71;
+}
+.header {
+    position: relative;
+    width: 1200px;
+    height: 600px;
+    margin: 0 auto;
+}
+.content_header {
+    position: absolute;
+    top: 166px;
+    left: 120px;
+    width: 470px;
+}
+.logo {
+    width: 185px;
+    height: 80px;
+}
+.slogan {
+    margin-top: 28px;
+    margin-left: 10px;
+    font-family: "HelveticaNeue", sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+    line-height: 35px;
+}
+.wrapper_icons {
+    margin-top: 23px;
+    margin-left: 10px;
+}
+.icon_bg {
+    display: inline-block;
+    vertical-align: top;
+    background: #4a3121;
+    opacity: 0.5;
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    margin-right: 16px;
+}
+.icon_bg:hover {
+    background: #2ecc71;
+    opacity: 100;
+}
+.icon {
+    font-size: 25px;
+    padding: 14px 17px;
+}
+.content_bg {
+    background: #ffffff;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 56px;
+}
+.column {
+    /*position: relative;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 330px;
+}
+.icon_big_bg {
+   /* position: absolute;
+    left: calc(50% - 49px);*/
+    text-align: center;
+    background: #2ecc71;
+    border-radius: 50%;
+    width: 98px;
+    height: 98px;
+}
+.icon_big {
+    color: #ffffff;
+    font-size: 50px;
+    padding: 24px;
+}
+.h3 {
+    text-align: center;
+    font-family: "Raleway SemiBold", sans-serif;
+    font-size: 22px;
+    color: #222222;
+    margin: 30px 0 20px 0;
+    text-transform: capitalize;
+}
+.text_column {
+    text-align: center;
+    font-family: "Myriad Pro Regular", sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    color: #848484;
+}
+.video_bg {
+    background: #e3e3e3;
+}
+.wrapper_video {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 58px 0 60px 0;
+}
+.content_video {
+    width: 540px;
+    margin-left: 10px;
+}
+.h3_video {
+    margin-bottom: 20px;
+    font-family: "Raleway SemiBold", sans-serif;
+    font-size: 22px;
+    color: #222222;
+    text-transform: capitalize;
+}
+.text_video {
+    text-align: left;
+}
+.form_email {
+    margin-top: 26px;
+}
+.email {
+    padding: 18px 20px 15px 20px;
+    border: 1px solid #c8c8c8;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 304px;
+    font-family: "HelveticaNeue Regular", sans-serif;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #848484;
+}
+.email::-webkit-input-placeholder {
+    color: #848484;
+}
+.button {
+    padding: 15px 20px;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 140px;
+    background: #2ecc71;
+    font-family: "Raleway Bold", sans-serif;
+    font-size: 22px;
+    text-transform: capitalize;
+    color: #ffffff;
+}
+.wrap_video {
+    margin-right: 11px;
+    overflow: hidden;
+    border: 1px solid #000000;
+    border-radius: 7px;
+}
+.video {
+    width: 500px;
+    height: 307px;
+}
+.content_2_bg {
+    background: #ffffff;
+}
+.content_2 {
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+
+/*СЛАЙДЕР*/
+
+.wrap_slider {
+    height: 283px;
+}
+
+.wrap_contact {
+
+}
+.h3_conact {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Raleway SemiBold", sans-serif;
+    font-size: 22px;
+    color: #222222;
+    text-transform: capitalize;
+}
+.wrapper_socials {
+    text-align: center;
+    margin-top: 20px;
+}
+.social {
+    display: inline-block;
+    background: #e3e3e3;
+    /*
+    поменять цвет
+    */
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    /*
+    поменять размер
+    */
+    margin-right: 10px;
+}
+.soc {
+    color: #ffffff;
+    font-size: 18px;
+    padding: 9px
+}
+.social:hover {
+    background: #2ecc71;
+}
+.footer_bg {
+    background: #e3e3e3;
+}
+.footer {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 58px 0;
+}
+.wrapper_nav {
+    text-align: center;
+}
+.nav {
+    padding: 10px 18px;
+    text-transform: capitalize;
+    font-size: 18px;
+    color: #848484;
+}
+.nav:hover {
+    color: #2ecc71;
+}
