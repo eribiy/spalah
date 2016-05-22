@@ -66,15 +66,12 @@
     padding-bottom: 56px;
 }
 .column {
-    /*position: relative;*/
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 330px;
 }
 .icon_big_bg {
-   /* position: absolute;
-    left: calc(50% - 49px);*/
     text-align: center;
     background: #2ecc71;
     border-radius: 50%;
@@ -181,71 +178,97 @@
     height: 307px;
 }
 .content_2_bg {
+    position: relative;
     background: #ffffff;
 }
 .content_2 {
-    width: 1000px;
+    width: 1200px;
     margin: 0 auto;
-    padding-top: 60px;
+    padding-top: 55px;
     padding-bottom: 60px;
 }
 
 /*СЛАЙДЕР*/
-/*.text_slider {
+
+.text1 {
+    position: absolute;
+    width: 860px;
+    text-align: center;
+    left: calc(50% - 430px);
     font-size: 18px;
-}*/
+}
+.text2   {
+    position: absolute;
+    width: 860px;
+    text-align: center;
+    left: calc(50% - 430px);
+    font-size: 18px;
+}
+.active {
+    display: none;
+}
+
+.quote {
+    font-family: "Myriad Pro Regular", sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 28px;
+    color: #848484;
+    quotes: "/201c" "/201d";
+}
+.author {
+    margin-top: 20px;
+    font-family: "Raleway SemiBold", sans-serif;
+    font-size: 18px;
+    color: #222222;
+    text-transform: capitalize;
+}
 .wrap_slider {
     width: 1200px;
     margin: 0 auto;
 }
 .wrap_img {
-
-    margin-left: 5px;
-    box-sizing: content-box;
-}
-.wrap_img, .slick-slide .slick-cloned {
     width: 50px;
     height: 50px;
+    margin-left: 8px;
+    box-sizing: content-box;
 }
 .img_slider {
     width: 100%;
     height: 100%;
-    border:none;
 }
 .img_slider:hover {
-    background: green;
+    background-image: url("//images/green_square.png");
 }
-/*.img_slider{
-    — moz-transition: all 1s ease;
-    — webkit-transition: all 1s ease;
-    — o-transition: all 1s ease;
-    transition: all 1s ease;
+.img_slider:focus {
+    outline: none;
 }
-.img_slider:hover{
-    — moz-transform: scale (1.5); !* эффект трансформации для Firefox до версии 16.0 *!
-    — webkit-transform: scale (1.5); !* эффект трансформации для Chrome до версии 26.0, Safari, Android и iOS *!
-    — o-transform: scale (1.5); !* эффект трансформации для Opera до версии 12.10 *!
-    — ms-transform: scale (1.5); !* эффект трансформации для IE 9.0 *!
-    transform: scale (1.5); !* эффект трансформации для других браузеров *!
-}*/
-.slick-slide {
-
+.wrap_slider, .slick-initialized, .slick-slider {
+    position: absolute;
+    top:175px;
+    left: 210px;
 }
-
-
-
-
-
-
-
-
-
-
+.transperent_left {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 175px;
+    left:217px;
+    background: linear-gradient(to right, #ffffff 0%, #ffffff 50%, transparent);
+}
+.transperent_right {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 175px;
+    right: 170px;
+    background: linear-gradient(to left, #ffffff 0%, #ffffff 50%, transparent);
+}
 
 
 
 .wrap_contact {
-
+    margin-top: 224px;
 }
 .h3_conact {
     text-align: center;

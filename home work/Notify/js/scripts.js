@@ -4,4 +4,11 @@ $(document).ready(function(){
         slidesToShow: 21,
         slidesToScroll: 21
     });
+    $(".img1").click(function(){
+        $(".text1").toggleClass("active");
+    });
+
+    $(".img2").click(function(){
+        $("text2").toggleClass("active");
+    })
 });
