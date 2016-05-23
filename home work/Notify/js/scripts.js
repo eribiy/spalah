@@ -6,7 +6,6 @@ $(document).ready(function(){
     });
     $(".img1").click(function(){
         $(".text1").toggleClass("active");
-       
     });
 
     $(".img2").click(function(){
