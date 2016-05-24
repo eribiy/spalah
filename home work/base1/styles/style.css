@@ -2,3 +2,7 @@
     width: 800px;
     margin-left: 100px;
 }
+.spoiler-title{cursor:pointer;}
+.spoiler-body{display:none;background:#f1f1f1;}
+.spoiler-title2{cursor:pointer;}
+.spoiler-body2{display:none;background:#f1f1f1;}
