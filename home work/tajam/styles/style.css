@@ -20,15 +20,21 @@
 
     color: #ffffff;
 }
-.logo_small {
+.logo_wrap {
     position: absolute;
     top: 16px;
     left: 10px;
+    width: 140px;
+    height: 50px;
+}
+.logo_small {
+    position: absolute;
+
 }
 .logotext {
     position: absolute;
-    top: 25px;
-    left: 65px;
+    top: 9px;
+    left: 55px;
 
 }
 .nav {
@@ -49,7 +55,9 @@
     font-size: 11px;
     text-transform: uppercase;
     color: #ffffff;
-
+}
+.menu:hover {
+    color:#03d4c8;
 }
 .header_main {
     margin: 224px auto 0 auto;
