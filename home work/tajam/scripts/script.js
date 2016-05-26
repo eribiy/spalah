@@ -4,8 +4,6 @@
 
 $(document).ready(function(){
     $('.header_img_wrapper').slick({
-        arrows: false,
-        dots: true
 
 
 });
