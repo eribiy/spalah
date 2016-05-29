@@ -1,0 +1,102 @@
+@font-face {
+    font-family: "MyriadProRegular";
+    src: url("../fonts/MyriadPro-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+.wrapper-all {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #333333;
+    font-family: "MyriadProRegular", sans-serif;
+}
+/*-------------------HEADER----------------------------*/
+.header {
+    background: #333333;
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: bottom;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 37px 0;
+    font-size: 0;
+}
+.logo-wrapper {
+
+}
+.logo {
+    font-size: 60px;
+    color: #eeeeee;
+    text-transform: capitalize;
+    letter-spacing: -2px;
+
+
+}
+.menu_wrapper {
+    margin-top: 35px;
+
+}
+.menu-item {
+    display: inline-block;
+    font-size: 0;
+}
+.menu-item:after {
+    content: "--";
+    padding: 0 10px;
+    font-size: 16px;
+    color: #eeeeee;
+}
+.menu-item:last-child:after {
+    content: "";
+    padding: 0;
+}
+.menu-item a{
+    font-size: 17px;
+    color: #eeeeee;
+    text-transform: capitalize;
+}
+.menu-item a:hover {
+    color: #0f94c9;
+}
+/*--------------------SECTION DESCRIPTION-------------------------------*/
+.section-wrapper {
+    background: #ffffff;
+}
+.content-wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+}
+.description {
+    padding-top: 60px;
+
+}
+.head-description {
+    font-size: 0;
+}
+.h1-description {
+    font-size: 60px;
+    font-weight: 900;
+    color: #333333;
+    text-transform: capitalize;
+}
+.h1-description-amp {
+    color: #00bff3;
+}
+.h2-description {
+    font-size: 50px;
+    color: #bbbbbb;
+    text-transform: capitalize;
+    letter-spacing: -2px;
+}
+.text-description {
+    border-bottom: 3px dotted #2ecc71;
+
+    font-size: 32px;
+    color: #555555;
+    line-height: 40px;
+}
+.text-description-bold {
+    font-weight: 600;
+}
