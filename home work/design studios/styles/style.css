@@ -18,13 +18,13 @@
     display: flex;
     justify-content: space-between;
     vertical-align: bottom;
-    max-width: 960px;
+    max-width: 988px;
     margin: 0 auto;
     padding: 37px 0;
     font-size: 0;
 }
 .logo-wrapper {
-
+    margin-left: 13px;
 }
 .logo {
     font-size: 60px;
@@ -36,6 +36,8 @@
 }
 .menu_wrapper {
     margin-top: 35px;
+    margin-right: 11px;
+
 
 }
 .menu-item {
@@ -44,7 +46,7 @@
 }
 .menu-item:after {
     content: "--";
-    padding: 0 10px;
+    padding: 0 9px;
     font-size: 16px;
     color: #eeeeee;
 }
@@ -65,12 +67,12 @@
     background: #ffffff;
 }
 .content-wrapper {
-    max-width: 960px;
+    max-width: 969px;
     margin: 0 auto;
+    padding-top: 60px;
 }
 .description {
-    padding-top: 60px;
-
+    padding-left: 3px;
 }
 .head-description {
     font-size: 0;
@@ -91,11 +93,16 @@
     letter-spacing: -2px;
 }
 .text-description {
-    border-bottom: 3px dotted #2ecc71;
+    border-top: 3px dotted #cccccc;
+    border-bottom: 3px dotted #cccccc;
+    padding: 27px 0 31px 0;
+    margin: 35px 0 45px 0;
 
     font-size: 32px;
     color: #555555;
-    line-height: 40px;
+    line-height: 42px;
+    padding-left: 3px;
+    letter-spacing: -0.25px;
 }
 .text-description-bold {
     font-weight: 600;
