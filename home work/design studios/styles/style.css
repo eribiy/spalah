@@ -95,13 +95,12 @@
 .text-description {
     border-top: 3px dotted #cccccc;
     border-bottom: 3px dotted #cccccc;
-    padding: 27px 0 31px 0;
+    padding: 27px 0 31px 3px;
     margin: 35px 0 45px 0;
 
     font-size: 32px;
     color: #555555;
     line-height: 42px;
-    padding-left: 3px;
     letter-spacing: -0.25px;
 }
 .text-description-bold {
@@ -151,10 +150,11 @@
 .additional-info {
     display: flex;
     justify-content: space-between;
-    padding: 15px 0;
+    padding: 15px 0 33px 0;
 }
+/*-----------clients---------------*/
 .clients-wrapper {
-    padding: 20px 30px 15px 3px;
+    padding: 20px 30px 0 3px;
     border-right: 3px dotted #cccccc;
     color: #555555;
     width: 50%;
@@ -165,12 +165,14 @@
     color: #555555;
 }
 .client {
-    margin: 38px 0;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
     font-size: 14px;
 }
 
 .photo-client {
-    float: left;
     margin-right: 23px;
     vertical-align: middle;
     width: 85px;
@@ -191,4 +193,65 @@
 .work {
     display: block;
     color: #00aeef;
+}
+/*-----------features----------------*/
+.feature-wrapper {
+    padding: 20px 0 0 50px;
+    color: #555555;
+    width: 50%;
+}
+.h-sub-add {
+    margin-top: 17px;
+    text-transform: capitalize;
+    font-size: 20px;
+    color: #888888;
+}
+.img-add {
+    width: 100%;
+    height:100%;
+    margin: 10px 0 15px 0;
+    border: 1px solid #cccccc;
+    box-shadow: 3px 3px 3px rgba(122,122,122,0.5);
+}
+.text-add {
+    line-height: 20px;
+    font-size: 14px;
+    color: #555555;
+}
+.link-add {
+    display: inline-block;
+    margin-top: 10px;
+    text-transform: capitalize;
+    color: #00aeef;
+    font-size: 14px;
+}
+/*-------------------FOOTER----------------------------------------------*/
+.footer {
+
+}
+.footer-content {
+    max-width: 969px;
+    margin: 0 auto;
+    border-top: 3px dotted #cccccc;
+}
+.text-footer {
+    display: inline-block;
+    margin-top: 18px;
+    font-size: 16px;
+    color: #888888;
+}
+/*---------------------------MEDIA SCREEN-----------------------------------------*/
+@media screen and (max-width: 930px) {
+    .columns {
+        max-width: 70%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        /*align-content: space-between;*/
+    }
+
+    .col {
+        margin-bottom: 20px;
+    }
 }
