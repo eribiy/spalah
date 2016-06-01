@@ -168,10 +168,11 @@
     margin: 38px 0;
     font-size: 14px;
 }
-.client
+
 .photo-client {
     float: left;
-    vertical-align: top;
+    margin-right: 23px;
+    vertical-align: middle;
     width: 85px;
     height: 85px;
 }
@@ -179,11 +180,13 @@
 
 }
 .quote {
-
+    line-height: 20px;
 }
 .author {
     display: block;
+    margin: 15px 0 5px 0;
     font-weight: 600;
+    font-size: 14px;
 }
 .work {
     display: block;
