@@ -1,7 +1,7 @@
 .wrapper_all {
-    width: 1000px;
-    margin: 0 auto;
-    font-family: arial;
+    /*width: 1000px;
+    margin: 0 auto;*/
+    font-family: Arial, sans-serif;
     overflow: hidden;
     color: #939393;
 }
@@ -70,6 +70,7 @@ button {
     border-top: 1px solid #d9d9d9;
     box-sizing: border-box;
     box-shadow: inset 2px 10px 0 -9px rgba(255, 255, 255, 1);
+    padding: 0 0 30px 0;
 }
 .logo_slogan {
     min-height: 7em;
@@ -83,7 +84,6 @@ button {
 }
 .slogan {
     display: block;
-    /*    vertical-align: middle;   why it does not work?*/
     padding-top: 53px;
     font-size: 16px;
 }
@@ -96,7 +96,7 @@ button {
     box-sizing: border-box;
     box-shadow: 0 0 0 1px #d9d9d9;
     border-radius: 10px;
-    margin: 0 18px 30px 1px;
+    margin-right: 18px;
 }
 .h_new_york {
     font-size: 30px;
@@ -135,11 +135,15 @@ button {
     box-sizing: border-box;
     position: relative;
 }
+.center {
+    /*display: flex;
+    justify-content: space-between;*/
+    padding-top: 15px;
+}
 .aside {
     background: transparent;
     float: left;
     width: 40%;
-    padding-top: 15px;
 }
 .arctical_left {
     background: #f1f1f1;
@@ -178,8 +182,7 @@ button {
     -moz-hyphens: auto;
     -ms-hyphens: auto;
     width: 58%;
-    float: right; /*how to make colums with the same height*/
-    margin-top: 15px;
+    float: right;
 }
 .arctical_2 div {
     margin: 20px 25px 20px 25px;
