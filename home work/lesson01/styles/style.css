@@ -1,0 +1,150 @@
+.wrapper-main {
+    font-family: Verdana, Geneva, sans-serif;
+
+}
+.header {
+    background-color: black;
+}
+.header-content {
+    position: relative;
+    width: 900px;
+    margin: auto;
+    padding: 20px 32px 22px 53px;
+    background: #727272;
+}
+.logo {
+    margin: 18px 0 2px;
+    float:left;
+}
+.h2 {
+    margin-top: 71px;
+    text-align: center;
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+.h2-blue {
+    color: #0abfa8;
+}
+.nav_links {
+    position: absolute;
+    right: 32px;
+    top: 20px;
+    color: #fff;
+    font-size: 12px;
+}
+.nav_links li {
+    display: inline-block;
+}
+.nav_links a {
+    color: #fff;
+}
+.nav_links a:hover {
+    color: #09bfa8;
+}
+.nav_links li:after {
+    content: "|";
+    padding: 0 5px;
+}
+.main {
+    background: linear-gradient(to bottom, #5d8f17 0, white 150px);
+}
+.content {
+    width: 900px;
+    margin: 0 auto;
+    padding: 13px 66px 100px 25px;
+    background: linear-gradient(to bottom, #72b5ac 0, white 150px);
+}
+.links {
+    display: block;
+    text-align: center;
+    margin-left: 100px;
+
+}
+.links li {
+    display: inline-block;
+    font-size: 27px;
+    padding: 0 7px;
+}
+.links a {
+    color: #164b69;
+}
+.links a:hover {
+    color: #09bfa8;
+}
+.aside {
+    float: left;
+    width: 225px;
+    margin-right: 20px;
+}
+.h2-aside {
+    margin: 0 0 30px 0;
+    text-align: start;
+    color: #000000;
+    font-size: 20px;
+}
+.img-aside-wrapper {
+    margin-bottom: 38px;
+}
+.img-aside {
+    float: left;
+    margin:  0 10px 0 0;
+    width: 85px;
+    height: 73px;
+}
+.text-aside {
+    font-size: 11px;
+    color: #000;
+    line-height: 13px;
+}
+.main_inner {
+    padding-top: 57px;
+}
+.article {
+    margin-bottom: 98px;
+}
+.main-head {
+    font-size: 27px;
+    margin-bottom: 25px;
+}
+.text-article {
+    font-size: 11px;
+    line-height: 15px;
+}
+.article-head {
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+/*
+
+.main_inner {
+    position: absolute;
+    right: 0;
+    width: 73%;
+    margin-top: 25px;
+}
+.inner_links {
+    text-align: center;
+    margin-top: 15px;
+}
+.inner_links a {
+    color: darkblue;
+    font-size: 14pt;
+    margin-left: 20px;
+}
+.inner_text {
+    padding-right: 50px;
+}
+.inner_text h1 {
+    font-size: 16pt;
+}
+.inner_text h2 {
+    font-size: 14pt;
+}
+.inner_text p {
+    font-size: 8pt;
+    text-align: justify;
+}
+article {
+    margin-bottom: 40px;
+}*/

@@ -46,7 +46,8 @@ body {
     width: 30px;
     height: 30px;
     padding: 0;
-    border: none;
+    border: 1px solid transparent;
+    border-radius: 3px;
     z-index: 20;
 }
 .a_icon:first-child{
@@ -65,8 +66,8 @@ body {
     background-position: -270px -19px;
 }
 .a_icon:hover {
-    opacity: 0.5;
     cursor: pointer;
+    border: 1px solid #f26722;
 }
 .wrapper_img_1 {
     position: relative;
@@ -200,6 +201,12 @@ body {
     font-size: 25px;
     font-weight: 600;
     color: #ffffff;
+}
+.button_1:hover,
+.button_2:hover,
+.button_3:hover {
+    background: rgba(255, 73, 0, 0.75);
+    transition: 0.3s;
 }
 .wrapper_img_2 {
     position: relative;
@@ -412,13 +419,18 @@ body {
     display: inline-block;
     width: 30px;
     height: 30px;
-    padding: 0;
-    border: none;
     color: #ffffff;
+    padding: 0;
+
 }
 .soc {
     color: #ffffff;
+    padding: 4px 0;
+    width: 33px;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 3px;
 }
 .soc:hover {
-    color: #ff4900;
+    border: 1px solid #ff4900;
 }

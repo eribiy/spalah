@@ -2,69 +2,93 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="styles/style.css"/>
+    <link rel="stylesheet" href="styles/reset.css"/>
     <title>Lorem ipsum</title>
 </head>
 <body>
-<header class="header">
-    <div class="header_nav center">
-        <div class="logo">
-            <span class="before"></span>
-            <span class="inner logo_text">Logo</span>
-        </div>
-        <nav class="nav_links">
-            <a href="">link</a> |
-            <a href="">link</a> |
-            <a href="">link</a> |
-            <a href="">link</a>
-        </nav>
-    </div>
-</header>
-<div class="main">
-    <div class="green"></div>
-    <div class="blue center"></div>
-    <div class="content center">
-        <aside>
-            <h2>Info container</h2>
-            <ul>
-                <li>
-                    <a href=""><img src="images/2.jpg"></a>
-                    <a href="">
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-                    </a>
-                </li>
-                <li>
-                    <a href=""><img src="images/3.jpg"></a>
-                    <a href="">
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-                    </a>
-                </li>
-                <li>
-                    <a href=""><img src="images/4.jpg"></a>
-                    <a href="">
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-                    </a>
-                </li>
+<div class="wrapper-main">
+    <header class="header">
+        <div class="header-content clearfix">
+            <a href="#"><img class="logo" src="images/logo.jpg"></a>
+            <h2 class="h2">Some <span class="h2 h2-blue">Headers</span></h2>
+            <ul class="nav_links">
+                <li><a href="">link</a></li>
+                <li><a href="">link</a></li>
+                <li><a href="">link</a></li>
+                <li><a href="">link</a></li>
+                <li><a href="">link</a></li>
             </ul>
-        </aside>
-        <div class="inner_links">
-            <span>
-                <a href="">link</a>
-                <a href="">link</a>
-                <a href="">link</a>
-                <a href="">link</a>
-                <a href="">link</a>
-            </span>
         </div>
-        <div class="main_inner">
-            <div class="inner_text">
-                <article>
-                    <h1>Lorem Ipsum</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.</p>
+    </header>
+    <div class="main">
+        <div class="content">
+            <ul class="links">
+                <li><a href="">link</a></li>
+                <li><a href="">link</a></li>
+                <li><a href="">link</a></li>
+                <li><a href="">link</a></li>
+                <li><a href="">link</a></li>
+            </ul>
+            <aside class="aside">
+                <h2 class="h2 h2-aside">Info container</h2>
+                <div class="img-aside-wrapper">
+                    <img class="img-aside" src="images/2.jpg">
+                    <p class="text-aside">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+                        consequat massa quis enim.
+                    </p>
+                </div>
+                <div class="img-aside-wrapper">
+                    <img class="img-aside" src="images/3.jpg">
+                    <p class="text-aside">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+                        consequat massa quis enim.
+                    </p>
+                </div>
+                <div class="img-aside-wrapper">
+                    <img class="img-aside" src="images/4.jpg">
+                    <p class="text-aside">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+                        consequat massa quis enim.
+                    </p>
+                </div>
+            </aside>
+            <div class="main_inner">
+                <article class="article">
+                    <h1 class="main-head">Lorem ipsum</h1>
+                    <p class="text-article">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+                        ligula eget
+                        dolor.
+                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+                        consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+                        arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu
+                        pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean
+                        vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac,
+                        enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra
+                        nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
+                        augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.</p>
                 </article>
-                <article>
-                    <h2>Lorem Ipsum</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.</p>
+                <article class="article">
+                    <h2 class="article-head">Lorem ipsum</h2>
+                    <p class="text-article">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+                        ligula eget dolor.
+                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+                        consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+                        arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu
+                        pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean
+                        vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac,
+                        enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra
+                        nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
+                        augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.</p>
                 </article>
             </div>
         </div>
