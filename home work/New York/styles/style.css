@@ -1,6 +1,4 @@
 .wrapper_all {
-    /*width: 1000px;
-    margin: 0 auto;*/
     font-family: Arial, sans-serif;
     overflow: hidden;
     color: #939393;
@@ -9,7 +7,7 @@
     background: linear-gradient(to bottom, rgba(250, 250, 250, 1) 0%, rgba(240, 235, 240, 1) 26%, rgba(219, 216, 219, 1) 51%, rgba(204, 204, 204, 1) 51%, rgba(233, 233, 233, 1) 100%);
 }
 .center {
-    width: 870px; /*how to make it at center?*/
+    width: 870px;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -57,6 +55,7 @@ button {
     border-radius: 30px;
     border: none;
     background: linear-gradient(to bottom, rgba(250, 250, 250, 1) 0%, rgba(242, 237, 242, 1) 26%, rgba(233, 232, 235, 1) 50%, rgba(224, 223, 227, 1) 50%, rgba(250, 250, 250, 1) 100%);
+    cursor: pointer;
 }
 .go {
     padding: 5px 0;
@@ -70,33 +69,38 @@ button {
     border-top: 1px solid #d9d9d9;
     box-sizing: border-box;
     box-shadow: inset 2px 10px 0 -9px rgba(255, 255, 255, 1);
-    padding: 0 0 30px 0;
+    padding: 50px 0 30px 0;
 }
 .logo_slogan {
-    min-height: 7em;
-    overflow: hidden;
+    margin-bottom: 50px;
+    font-size: 0;
 }
 .logo {
-    width: 197px;
-    height: 25px;
-    padding: 50px 10px 50px 0;
-    float: left;
+    display: inline-block;
 }
 .slogan {
-    display: block;
-    padding-top: 53px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 10px;
     font-size: 16px;
 }
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
 .img_new_york {
     display: block;
     width: 485px;
     height: 175px;
-    float: left;
     border: 10px solid #ffffff;
     box-sizing: border-box;
     box-shadow: 0 0 0 1px #d9d9d9;
     border-radius: 10px;
     margin-right: 18px;
+}
+.arctical_1-wrapper {
+
 }
 .h_new_york {
     font-size: 30px;
@@ -128,6 +132,7 @@ button {
     text-decoration: none;
 }
 .wrapper_main {
+    padding: 15px 0;
     background: #fbfbfb;
     overflow: hidden;
     border-top: 1px solid #d9d9d9;
@@ -135,15 +140,14 @@ button {
     box-sizing: border-box;
     position: relative;
 }
-.center {
-    /*display: flex;
-    justify-content: space-between;*/
-    padding-top: 15px;
+.arctical-wrapper {
+    display:flex;
+    justify-content: space-between;
 }
 .aside {
     background: transparent;
-    float: left;
-    width: 40%;
+    width: 348px;
+    margin-right: 15px;
 }
 .arctical_left {
     background: #f1f1f1;
@@ -155,19 +159,19 @@ button {
     font-size: 12px;
     line-height: 1.5em;
     text-align: justify;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
-    overflow: hidden;
+}
+.arctical_left:last-child {
+    margin: 0;
 }
 .arctical_left div {
-    margin: 15px;
+    padding: 19px;
+    display: flex;
+    justify-content: space-between;
 }
 .img_small {
     width: 53px;
     height: 70px;
-    float: left;
-    margin: 0 20px 20px 0;
+    margin-right: 20px;
 }
 .arctical_2 {
     background: #f1f1f1;
@@ -178,14 +182,11 @@ button {
     font-size: 12px;
     line-height: 2em;
     text-align: justify;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
-    width: 58%;
-    float: right;
+    width: 506px;
+    padding: 20px 25px 20px 25px;
 }
 .arctical_2 div {
-    margin: 20px 25px 20px 25px;
+
 }
 .h_lorem {
     font-size: 30px;
@@ -199,10 +200,6 @@ button {
 }
 footer {
     background: #fbfbfb;
-
-    width: 1000px;
-    margin: 0 auto;
-
 }
 .foot {
     height: 80px;
