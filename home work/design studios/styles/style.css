@@ -92,6 +92,7 @@
     text-align: center;
     text-transform: uppercase;
 }
+
 .mobile-nav-item a {
     color: #515f67;
 }
@@ -471,12 +472,15 @@
     .logo-wrapper {
         margin-left: 0;
     }
+
     .logo {
         font-size: 35px;
     }
+
     .h3-col {
         font-size: 30px;
     }
+
     .text-footer {
         font-size: 11px;
     }
