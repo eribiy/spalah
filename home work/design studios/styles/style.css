@@ -46,7 +46,7 @@
     display: block;
     width: 40px;
     padding: 10px;
-    border: 1px solid #00bff3;
+    border: 1px solid #fff;
     cursor: pointer;
 }
 
@@ -54,7 +54,7 @@
     display: block;
     position: relative;
     height: 2px;
-    background: #00bff3;
+    background: #fff;
     margin: 6px 0;
 }
 
@@ -64,7 +64,7 @@
     position: absolute;
     height: 2px;
     width: 100%;
-    background: #00bff3;
+    background: #fff;
 }
 
 .mobile-btn span:before {
