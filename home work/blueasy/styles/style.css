@@ -5,8 +5,9 @@ body {
 
 .main-bg {
     background: url("../images/bg.jpg");
+    height: 80vh;
     background-size: cover;
-    height: 80vh
+
 }
 
 .header-bg {
@@ -178,21 +179,18 @@ body {
     color: #fff;
 }
 
-/*.video .section-inner {
-    padding: 10% 0;
-}*/
 .video-row {
     font-size: 0;
     margin: 0 -3%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .video-col {
     font-size: 14px;
     width: 44%;
     margin: 0 3%;
-    max-height: 312px;
 }
 
 .video-col p {
@@ -214,8 +212,8 @@ body {
 }
 
 .video-item {
-    max-width: 100%;
-    max-height: 312px;
+    width: 100%;
+    height: 300px;
 }
 
 .twitter {
@@ -244,6 +242,7 @@ body {
 
 .john {
     background: url("../images/john-bg.jpg");
+    background-size: cover;
     color: #fff;
 }
 
@@ -278,29 +277,46 @@ body {
     height: 60px;
     border: 2px solid #fff;
     margin-right: 22px;
-    font-size: 30px;
     color: #fff;
 }
+
+.social:last-child {
+    margin-right: 0;
+}
+
+.social:hover {
+    border: 2px solid #4bcaff;
+    color: #4bcaff;
+}
+.social i {
+    font-size: 30px;
+}
+
 .test {
     background: #ffffff;
     color: #515f67;
 }
+
 .test .section-title:before {
     background: #515f67;
 }
+
 .test-row {
     display: flex;
     justify-content: space-between;
 }
+
 .test-col i {
     font-style: italic;
     font-size: 40px;
 }
-.test-text-wrapper p{
+
+.test-text-wrapper p {
     font-size: 28px;
     font-weight: 100;
     line-height: 40px;
 }
+
 .test-text-wrapper span {
     display: block;
     margin-top: 25px;
@@ -308,8 +324,10 @@ body {
     font-weight: 600;
     color: #4bcaff;
 }
+
 .contact-form {
     background: url("../images/form-bg.jpg");
+    background-size: cover;
     color: #fff;
 }
 
@@ -370,11 +388,76 @@ textarea.form-input {
     line-height: 20px;
 }
 
+.form-btn {
+    background: #4bcaff;
+    width: 370px;
+    height: 60px;
+    margin-top: 40px;
+    border: 2px solid transparent;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+
+.form-btn:hover {
+    border: 2px solid #fff;
+}
+
+.footer-bg {
+    background: #353f47;
+}
+
+.footer {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 65px 0;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    /*margin: 0 -3%;*/
+}
+
+.footer-col {
+    display: inline-block;
+    font-size: 12px;
+    color: #515f67;
+    /*margin: 0 3%;*/
+    vertical-align: top;
+}
+
+.footer-col li {
+    display: inline-block;
+}
+
+.footer-col li:after {
+    content: "|";
+    margin: 0 5px;
+}
+
+.footer-col li:last-child:after {
+    content: "";
+}
+
+.footer-nav-item {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #515f67;
+}
+
+.footer-nav-item:hover {
+    color: #4bcaff;
+}
+
 .mobile-btn {
     display: block;
     width: 40px;
     padding: 10px;
     border: 1px solid #4bcaff;
+    cursor: pointer;
 }
 
 .mobile-btn span {
@@ -423,11 +506,15 @@ textarea.form-input {
 
 @media screen and (max-width: 1220px) {
     .header {
-        padding: 40px 10px;
+        padding: 40px 20px;
     }
 
     .section-inner {
         padding: 60px 50px;
+    }
+
+    .footer {
+        padding: 40px 20px;
     }
 }
 
@@ -437,9 +524,36 @@ textarea.form-input {
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 780px) {
+    .header-bg {
+        margin-bottom: 10%;
+    }
     .section-col {
         width: 48%;
+    }
+
+    .video-row {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .video-col {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .video-col:last-child {
+        margin-bottom: 0;
+    }
+
+    .john-row {
+        margin: 0;
+    }
+
+    .john-col {
+        display: block;
+        width: 100%;
+        margin: 0;
     }
 
     .form-col {
@@ -473,8 +587,56 @@ textarea.form-input {
 }
 
 @media screen and (max-width: 520px) {
+    .header-bg {
+        margin-bottom: 30%;
+    }
     .section-col {
         width: 100%;
-        margin: 0 0 20px;
+        margin: 0 0 30px;
+    }
+
+    .john-col p {
+        margin-bottom: 20px;
+    }
+
+    .social {
+        width: 50px;
+        height: 50px;
+    }
+
+    .form-btn {
+        width: 200px;
     }
 }
+
+@media screen and (max-width: 385px) {
+    .video-item {
+        height: 100%;
+    }
+
+    .twitter-row p {
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .social {
+        margin: 5px;
+        width: 40px;
+        height: 40px;
+    }
+    .social i{
+        font-size: 20px;
+    }
+    .test-col i {
+        font-size: 18px;
+    }
+    .test-text-wrapper p {
+        font-size: 24px;
+    }
+    .footer-col {
+        font-size: 10px;
+    }
+    .footer-nav-item {
+        font-size: 10px;
+    }
+}
+
