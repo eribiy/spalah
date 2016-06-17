@@ -13,6 +13,12 @@
     font-style: normal;
     font-weight: normal;
 }
+@font-face {
+    font-family: "Roboto black";
+    src: url("../font/Roboto/Roboto-Light.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
 .wrapper {
     font-family: "Myriad Pro Regular", sans-serif;
 }
@@ -20,6 +26,7 @@
     max-width: 960px;
     margin: 0 auto;
     padding: 17px 5px 0 0;
+    color: #fff;
 }
 .menu {
     display: flex;
@@ -46,14 +53,45 @@
     color: #fff;
 }
 .nav-item:hover {
-    color: #03d3c8;
+    color: #00e0d0;
 }
 .header-content {
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 154px auto 0;
+    max-width: 750px;
 }
 .header-content h1 {
-    font-family: "PlayfairDisplay Black". ;
+    position: relative;
+    font-family: 'Playfair Display Black', arial;
     font-size: 32px;
+    text-align: center;
+    margin-bottom: 49px;
+}
+.header-content h1:after {
+    position: absolute;
+    bottom: -26px;
+    left: calc(50% - 25px);
+    content:"";
+    width: 50px;
+    height: 2px;
+    background: #00e0d0;
+}
+.header-content p {
+    font-family: "Roboto light", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 46px;
+}
+.button {
+    font-family: "Hammersmith One", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    color: #00e0d0;
+    padding: 11px 14px;
+    border: 1px solid #00e0d0;
 }
 .header-bg {
     position: absolute;
