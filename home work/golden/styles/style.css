@@ -1,0 +1,148 @@
+.wrapper {
+    position: relative;
+    font-family: "Arial", sans-serif;
+}
+
+.header {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    background: transparent;
+}
+
+.container {
+    width: 1070px;
+    margin: 0 auto;
+}
+
+.container-header {
+    padding: 20px 70px 20px 60px;
+}
+
+.logo {
+    float: left;
+}
+
+.nav {
+    float: right;
+    font-size: 0;
+}
+
+.nav li {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.nav li a {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.nav li a:hover {
+    color: #fed136;
+}
+
+.home {
+    background: url("../images/home.jpg");
+    background-size: cover;
+    height: 700px;
+    padding-top: 270px;
+}
+
+.h3 {
+    font-size: 40px;
+    color: #fff;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.h1 {
+    font-size: 75px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 150px;
+}
+
+.button {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 23px 30px;
+    background: #fed136;
+    border-radius: 2px;
+    border: none;
+    margin: 0 calc(50% - 121px);
+}
+
+.button:hover {
+    background: #fdc503;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: 600;
+    color: #222222;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.sub-title {
+    font-family: "Times New Roman", serif;
+    font-size: 16px;
+    color: #777777;
+    text-align: center;
+}
+
+.column {
+    position: relative;
+    display: inline-block;
+    width: 30%;
+    margin: 0 1.5%;
+    padding-top: 98px;
+}
+
+.row {
+    margin: 0 -1.5%;
+}
+
+.column-title {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    color: #222222;
+    text-align: center;
+}
+
+.column-title:before {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 36px);
+    content: "";
+    background: url("../images/sprite.png");
+    width: 73px;
+    height: 73px;
+}
+
+.first:before {
+    background-position-x: 0;
+}
+
+.second:before {
+    background-position-x: 287px;
+}
+
+.third:before {
+    background-position-x: 500px;
+}
+
+.services p {
+    font-family: "Times New Roman", serif;
+    font-size: 18px;
+    color: #777777;
+    text-align: center;
+}
+
+
