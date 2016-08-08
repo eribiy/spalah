@@ -99,14 +99,15 @@
     font-size: 16px;
     color: #777777;
     text-align: center;
+    margin-bottom: 80px;
 }
 
-.row {
-    margin: 80px -1.5% 0;
+.services-row {
+    margin: 0 -1.5% 0;
     font-size: 0;
 }
 
-.column {
+.services-item {
     position: relative;
     display: inline-block;
     width: 30%;
@@ -114,16 +115,7 @@
     padding-top: 96px;
 }
 
-.column-title {
-    display: block;
-    font-size: 18px;
-    font-weight: 600;
-    color: #222222;
-    text-align: center;
-    margin-bottom: 12px;
-}
-
-.column-title:before {
+.services-item:before {
     position: absolute;
     top: 0;
     left: calc(50% - 36px);
@@ -145,22 +137,48 @@
     background-position-x: 500px;
 }
 
+.column-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #222222;
+    text-align: center;
+}
+
 .services p {
     font-family: "Times New Roman", serif;
     font-size: 18px;
     color: #777777;
     text-align: center;
     line-height: 25px;
+    margin-top: 12px;
 }
 
 .portfolio {
     background: #f7f7f7;
 }
 
+.portfolio-row {
+    margin: 0 -16px;
+    font-size: 0;
+}
+
+.portfolio-row {
+    margin-bottom: 50px;
+}
+
+.portfolio-row:last-child {
+    margin-bottom: 0;
+}
+
 .portfolio-item {
     display: inline-block;
     background: #fff;
     width: 290px;
+    margin: 0 16px;
+}
+
+.portfolio-item img {
+    margin-bottom: 30px;
 }
 
 .portfolio span {
@@ -170,6 +188,54 @@
     color: #737373;
     text-align: center;
     line-height: 25px;
+    margin-bottom: 30px;
 }
 
+.about {
+    background: #fff;
+}
 
+.about-row {
+    font-size: 0;
+}
+
+.about-item {
+    display: inline-block;
+    width: 290px;
+}
+
+.about-item-center {
+    width: 182px;
+    margin: 0 89px;
+}
+
+.column-title-left {
+    text-align: right;
+}
+.column-title-right {
+    text-align: left;
+}
+
+.content {
+    font-family: "Times New Roman", serif;
+    font-size: 16px;
+    color: #777777;
+    line-height: 25px;
+    margin-top: 12px;
+}
+
+.content-left {
+    text-align: right;
+}
+
+.content-right {
+    text-align: left;
+}
+
+.img-round {
+
+}
+
+.about-item-line {
+    margin: 0 calc(50% - 1px);
+}
