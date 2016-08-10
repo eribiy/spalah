@@ -11,7 +11,7 @@
 }
 
 .container {
-    width: 1070px;
+    max-width: 1070px;
     margin: 0 auto;
 }
 
@@ -490,7 +490,7 @@
 }
 
 .footer-column .icon-link {
-   color: #fff;
+    color: #fff;
 }
 
 .footer-column .icon {
@@ -516,4 +516,81 @@
 .icon-google-plus:hover {
     border: 3px solid #d95232;
     background: #d95232;
+}
+
+.mobile-nav-wrapper {
+    display: none;
+}
+
+.mobile-btn {
+    display: block;
+    width: 40px;
+    padding: 10px;
+    border: 1px solid #fed136;
+}
+
+.mobile-btn span {
+    display: block;
+    position: relative;
+    height: 2px;
+    background: #fed136;
+    margin: 6px 0;
+}
+
+.mobile-btn span:before,
+.mobile-btn span:after {
+    content: "";
+    height: 2px;
+    position: absolute;
+    background: #fed136;
+
+}
+
+.mobile-btn span:before {
+    top: -6px;
+    right: 0;
+    left: 0;
+}
+
+.mobile-btn span:after {
+    bottom: -6px;
+    right: 0;
+    left: 0;
+}
+
+.mobile-nav {
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 100px;
+}
+
+.mobile-nav a {
+    display: block;
+    color: #222222;
+    background: #f7f7f7;
+    border-bottom: 1px solid #222222;
+    padding: 14px 0;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 700px) {
+    .nav {
+        display: none;
+    }
+
+    .mobile-nav-wrapper {
+        display: block;
+    }
+
+    .logo {
+        float: left;
+    }
+
+    .mobile-btn {
+        float: right;
+    }
 }
