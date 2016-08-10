@@ -158,12 +158,8 @@
 }
 
 .portfolio-row {
-    margin: 0 -16px;
+    margin: 0 -16px 50px -16px;
     font-size: 0;
-}
-
-.portfolio-row {
-    margin-bottom: 50px;
 }
 
 .portfolio-row:last-child {
@@ -202,6 +198,7 @@
 .about-item {
     display: inline-block;
     width: 290px;
+    vertical-align: top;
 }
 
 .about-item-center {
@@ -212,6 +209,7 @@
 .column-title-left {
     text-align: right;
 }
+
 .column-title-right {
     text-align: left;
 }
@@ -233,9 +231,289 @@
 }
 
 .img-round {
+    position: relative;
+}
+
+.img-line {
+    margin: 0 auto;
+}
+
+.team {
+    background: #f7f7f7;
+}
+
+.team-row {
+    margin: 0 auto;
+}
+
+.team-item {
+    display: inline-block;
+    width: 238px;
+    margin: 0 36px;
+}
+
+.team-item img {
+    margin-bottom: 30px;
+}
+
+.team-item > .column-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #222222;
+    text-align: center;
+}
+
+.team-item span {
+    display: block;
+    font-size: 14px;
+    color: #777777;
+    text-align: center;
+    line-height: 25px;
+}
+
+.icon-wrap {
+    vertical-align: middle;
+    width: 144px;
+    margin: 5px auto;
+    text-align: center;
+    font-size: 0;
 
 }
 
-.about-item-line {
-    margin: 0 calc(50% - 1px);
+.icon-link {
+    color: #222222;
+}
+
+.icon {
+    display: inline-block;
+    font-size: 23px;
+    text-align: center;
+    padding: 6px 0;
+    width: 38px;
+    height: 38px;
+    border: 3px solid #222222;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.icon-google-plus {
+    font-size: 20px;
+    padding: 8px 0;
+}
+
+.icon:hover {
+    color: #fff;
+}
+
+.team-description {
+    width: 524px;
+    margin: 50px auto 0;
+    line-height: 25px;
+}
+
+.container-logos {
+    padding: 90px 60px 90px 150px;
+}
+
+.logos {
+
+}
+
+.logos-row {
+    font-size: 0;
+}
+
+.img-logo {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 20px;
+}
+
+.contact {
+    background: url("../images/map-image.jpg");
+    background-size: cover;
+}
+
+.contact .title {
+    color: #fff;
+}
+
+.contact-raw {
+    font-size: 0;
+    margin: 0 -14px 14px;
+}
+
+.contact-column {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+}
+
+.contact-inp,
+.contact-massage {
+    width: 456px;
+    padding: 17px 20px;
+    margin: 14px;
+    border: 1px solid #cccccc;
+    border-radius: 2px;
+}
+
+.contact-inp:first-child,
+.contact-massage:first-child {
+    margin-top: 0;
+}
+
+::-webkit-input-placeholder {
+    color: #cccccc;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+::-moz-placeholder {
+    color: #cccccc;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+:-moz-placeholder {
+    color: #cccccc;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+:-ms-input-placeholder {
+    color: #cccccc;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+:focus::-webkit-input-placeholder {
+    color: transparent
+}
+
+:focus::-moz-placeholder {
+    color: transparent
+}
+
+:focus:-moz-placeholder {
+    color: transparent
+}
+
+:focus:-ms-input-placeholder {
+    color: transparent
+}
+
+.contact-inp::-webkit-input-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.contact-inp::-moz-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.contact-inp:-moz-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.contact-inp:-ms-input-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.contact-inp:focus::-webkit-input-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.contact-inp:focus::-moz-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.contact-inp:focus:-moz-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.contact-inp:focus:-ms-input-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+:hover::-webkit-input-placeholder {
+    color: #222222;
+}
+
+:hover::-moz-placeholder {
+    color: #222222;
+}
+
+:hover:-moz-placeholder {
+    color: #222222;
+}
+
+:hover:-ms-input-placeholder {
+    color: #222222;
+}
+
+.contact-massage {
+    height: 210px;
+}
+
+.contact .button {
+    padding: 23px 24px;
+}
+
+.footer {
+    background: #fff;
+}
+
+.container-footer {
+    padding: 20px 60px 30px 70px;
+}
+
+.footer-raw {
+
+}
+
+.footer-column {
+    display: inline-block;
+    width: 38%;
+    vertical-align: middle;
+}
+
+.footer-column .icon-link {
+   color: #fff;
+}
+
+.footer-column .icon {
+    border: 3px solid #222222;
+    background: #222222;
+}
+
+.icon-twitter:hover {
+    border: 3px solid #00aced;
+    background: #00aced;
+}
+
+.icon-facebook:hover {
+    border: 3px solid #3b5998;
+    background: #3b5998;
+}
+
+.icon-pinterest:hover {
+    border: 3px solid #cb2028;
+    background: #cb2028;
+}
+
+.icon-google-plus:hover {
+    border: 3px solid #d95232;
+    background: #d95232;
 }

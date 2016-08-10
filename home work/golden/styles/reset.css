@@ -70,3 +70,12 @@ img {
 strong {
     font-weight: 700;
 }
+
+input,
+textarea {
+    outline: none
+}
+
+textarea {
+    resize: none;
+}
