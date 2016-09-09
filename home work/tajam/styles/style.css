@@ -1,122 +1,165 @@
 @font-face {
     font-family: "MyriadProRegular";
     src: url("../font/MyriadProRegular/MyriadProRegular.eot");
-    src: url("../font/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+    src: url("../font/MyriadProRegular/MyriadProRegular.eot?#iefix") format("embedded-opentype"),
     url("../font/MyriadProRegular/MyriadProRegular.woff") format("woff"),
     url("../font/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
+
 @font-face {
-    font-family: "Roboto black";
+    font-family: "Roboto Black";
     src: url("../font/Roboto/Roboto-Black.ttf");
     font-style: normal;
-    font-weight: normal;
+    font-weight: 900;
 }
+/*@font-face {
+    font-family: "PlayfairDisplay Black";
+    src: url("../font/PlayfairDisplay/PlayfairDisplay-Black.ttf");
+    font-style: normal;
+    font-weight: 900;
+}*/
+
 @font-face {
-    font-family: "Roboto black";
+    font-family: "Roboto Light";
     src: url("../font/Roboto/Roboto-Light.ttf");
     font-style: normal;
-    font-weight: normal;
+    font-weight: 300;
 }
+@font-face {
+    font-family: "HammersmithOne Regular";
+    src: url("../font/Hammersmith_One/HammersmithOne-Regular.ttf");
+    font-style: normal;
+    font-weight: 400;
+}
+
 
 .wrapper {
     font-family: "Myriad Pro Regular", sans-serif;
 }
+
 /*----------------------------header--------------------------------------------*/
 .center {
     max-width: 960px;
     margin: 0 auto;
+    padding: 0 10px;
 }
+
 .header {
-    padding: 17px 5px 0 0;
+    padding: 17px 10px 0;
     color: #fff;
 }
+
 .menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .logo-header {
     position: relative;
     width: 130px;
 }
+
+.logo-header img {
+    display: inline-block;
+}
+
 .logo-text {
     position: absolute;
     top: 11px;
     left: 55px;
 }
+
 .nav {
 
 }
+
 .nav-item {
     padding: 11px;
-    font-family: "Roboto black", sans-serif;
+    font-family: "Roboto Black", sans-serif;
     font-size: 13px;
     text-transform: uppercase;
     color: #fff;
 }
+
 .nav-item:hover {
     color: #00e0d0;
 }
+
 .header-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 154px auto 0;
     max-width: 750px;
+    }
+.header-content:after {
+    content: " ";
+    height: 207px;
+
+
 }
 .header-content h1 {
     position: relative;
-    font-family: 'Playfair Display Black', arial;
+    font-family: "Playfair Display Black", serif;
     font-size: 32px;
     text-align: center;
     margin-bottom: 49px;
 }
+
 .header-content h1:after {
     position: absolute;
     bottom: -26px;
     left: calc(50% - 25px);
-    content:"";
+    content: "";
     width: 50px;
     height: 2px;
     background: #00e0d0;
 }
+
 .header-content p {
-    font-family: "Roboto light", sans-serif;
+    font-family: "Roboto Light", sans-serif;
     font-size: 14px;
     line-height: 24px;
     text-align: center;
     margin-bottom: 46px;
 }
+
 .button {
-    font-family: "Hammersmith One", sans-serif;
+    font-family: "HammersmithOne Regular", sans-serif;
+    font-size: 16px;
     text-align: center;
     text-transform: uppercase;
     color: #00e0d0;
     padding: 11px 14px;
     border: 1px solid #00e0d0;
 }
+
 .button:hover {
     color: #fff;
     border: 1px solid #fff;
 }
+
 .header-bg {
     position: absolute;
     width: 100%;
+    height: 670px;
     top: 0;
     z-index: -1;
 }
+
 .img-header {
-    width: 100%;
-    height: 88.5vh;
     background-size: cover;
 }
+
 /*----------slider-header------------*/
 .slick-dots {
     bottom: 70px;
     font-size: 0;
 }
+
 .slick-dots li {
     position: relative;
     display: inline-block;
@@ -125,7 +168,8 @@
     margin: 0;
     padding: 0;
     cursor: pointer;
-}
+    }
+
 .slick-dots li button {
     width: 15px;
     height: 15px;
@@ -135,7 +179,9 @@
     border: 0;
     outline: none;
     background: transparent;
+
 }
+
 .slick-dots li button:before {
     width: 8px;
     height: 8px;
@@ -143,13 +189,23 @@
     border-radius: 50%;
     content: '';
     opacity: 100;
+
 }
+
 .slick-dots li button:hover:before,
 .slick-dots li button:focus:before {
     border: 1px solid #00e0d0;
     background: #00e0d0;
+
 }
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+
 /*----------slider-header-END------------*/
 
-
 /*-------------------------header-end---------------------------------*/
+.story {
+    padding: 70px 10px 70px 70px;
+}
