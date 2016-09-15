@@ -285,7 +285,6 @@
 }
 
 .icon-wrap {
-    vertical-align: middle;
     width: 144px;
     margin: 5px auto;
     text-align: center;
@@ -294,11 +293,12 @@
 }
 
 .icon-link {
+    display: inline-block;
+    vertical-align: middle;
     color: #222222;
 }
 
 .icon {
-    display: inline-block;
     font-size: 23px;
     text-align: center;
     padding: 6px 0;
@@ -311,7 +311,7 @@
 
 .icon-google-plus {
     font-size: 20px;
-    padding: 8px 0;
+    padding: 7px 0;
 }
 
 .icon:hover {
@@ -381,28 +381,28 @@
     margin-top: 0;
 }
 
-::-webkit-input-placeholder {
+.contact-inp::-webkit-input-placeholder {
     color: #cccccc;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 600;
 }
 
-::-moz-placeholder {
+.contact-inp::-moz-placeholder {
     color: #cccccc;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 600;
 }
 
-:-moz-placeholder {
+.contact-inp:-moz-placeholder {
     color: #cccccc;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 600;
 }
 
-:-ms-input-placeholder {
+.contact-inp:-ms-input-placeholder {
     color: #cccccc;
     text-transform: uppercase;
     font-size: 14px;
@@ -449,24 +449,68 @@
     transition: opacity 0.3s ease;
 }
 
-:hover::-webkit-input-placeholder {
+.contact-inp:hover::-webkit-input-placeholder {
     color: #222222;
 }
 
-:hover::-moz-placeholder {
+.contact-inp:hover::-moz-placeholder {
     color: #222222;
 }
 
-:hover:-moz-placeholder {
+.contact-inp:hover:-moz-placeholder {
     color: #222222;
 }
 
-:hover:-ms-input-placeholder {
+.contact-inp:hover:-ms-input-placeholder {
     color: #222222;
 }
 
 .contact-massage {
     height: 210px;
+}
+
+.contact-massage:hover::-webkit-input-placeholder {
+    color: #222222;
+}
+
+.contact-massage:hover::-moz-placeholder {
+    color: #222222;
+}
+
+.contact-massage:hover:-moz-placeholder {
+    color: #222222;
+}
+
+.contact-massage:hover:-ms-input-placeholder {
+    color: #222222;
+}
+
+.contact-massage::-webkit-input-placeholder {
+    color: #cccccc;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.contact-massage::-moz-placeholder {
+    color: #cccccc;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.contact-massage:-moz-placeholder {
+    color: #cccccc;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.contact-massage:-ms-input-placeholder {
+    color: #cccccc;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .contact-massage::-webkit-input-placeholder {
