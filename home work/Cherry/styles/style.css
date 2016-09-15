@@ -415,7 +415,7 @@ tr:last-child td:last-child {
     margin: 0 auto;
     padding-top: 35px;
     padding-bottom: 30px;
-    font-size: 14px;
+    font-size: 0;
 }
 .footer-col {
     display: inline-block;
@@ -453,10 +453,11 @@ tr:last-child td:last-child {
     content: '';
     display: inline-block;
     background: url("../img/sprite.png") no-repeat;
-    background-position: -64px 0;
+    background-position: -64px -1px;
     vertical-align: middle;
-    width: 16px;
-    height: 16px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
 }
 .li {
     list-style: disc;
