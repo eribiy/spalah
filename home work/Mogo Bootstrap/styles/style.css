@@ -1,0 +1,109 @@
+/*FONTS*/
+@font-face {
+    font-family: "Montserrat Bold";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Montserrat Bold"),
+    url(../fonts/Montserrat/Montserrat-Bold.otf);
+}
+
+@font-face {
+    font-family: "Montserrat Regular";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Montserrat Regular"),
+    url(../fonts/Montserrat/Montserrat-Regular.otf);
+}
+/*FONTS END*/
+.wrapper-all {
+
+}
+
+/*section header-bg*/
+
+.header-bg {
+    background: url(../images/header-bg.jpg) no-repeat;
+    background-size: cover;
+    color: #fff;
+    height: 1000px;
+}
+
+.wrapper-content {
+    max-width: 1200px;
+}
+
+.header {
+
+}
+
+.logo {
+    font: 30px "Montserrat Bold", sans-serif;
+    text-transform: capitalize;
+}
+
+.navbar-brand, .navbar-nav>li>a {
+    text-shadow: none;
+}
+
+.navbar-brand {
+    float: left;
+    height: inherit;
+}
+.navbar-brand:hover {
+    color: #fff;
+}
+.navbar-nav li a{
+    font: 14px "Montserrat Regular",sans-serif;
+    text-transform: uppercase;
+}
+
+.navbar-nav .active, .navbar-nav li a:hover {
+    background: transparent;
+    color: #fce38a;
+    border-bottom: 3px solid #fce38a;
+}
+
+.title-Kaushan {
+    font: 72px "Kaushan Script", cursive;
+    text-align: center;
+}
+.title {
+    font: 150px "Montserrat Regular",sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+.btn-header {
+    position: relative;
+    font: 14px "Montserrat Bold", sans-serif;
+    text-transform: uppercase;
+    padding: 15px 31px;
+}
+.btn-header:before {
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 30px);
+    content: "";
+    background: #fff;
+    width: 60px;
+    height: 3px;
+}
+
+.btn, .btn-default, .btn-default:active, .btn-default:focus {
+    text-shadow: none;
+    background: none transparent !important;
+    border: 3px solid #fff;
+    color: #fff;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none !important;
+
+}
+.btn-default:hover {
+    text-shadow: none;
+    color: #f38181;
+    background-color: transparent;
+    border: 3px solid #f38181;
+}
+
+
+/*section header-bg END*/
