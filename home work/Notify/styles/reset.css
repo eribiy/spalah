@@ -64,12 +64,23 @@ a {
     color: #fff;
 }
 
-/*
 img {
     display: block;
 }
-*/
 
 strong {
     font-weight: 700;
+}
+
+input,
+textarea {
+    outline: none
+}
+
+textarea {
+    resize: none;
+}
+
+:focus{
+    outline: none;
 }
