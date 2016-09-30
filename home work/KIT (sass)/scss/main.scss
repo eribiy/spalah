@@ -1,0 +1,80 @@
+@import "variables", "mixin";
+
+.wrapper-main {
+  background: $main-bg;
+  font: 14px $main-font;
+  color: $main-color;
+  .content {
+    max-width: $main-width;
+    margin: 50px auto;
+
+  }
+}
+
+.box {
+  padding: $box-padding;
+  background: $box-bg;
+  @include border-radius($box-radius);
+  @include box-shadow($shadow);
+  &-big {
+    padding: 0 20px;
+    line-height: 95px;
+  }
+}
+
+.box__nav {
+  float: left;
+  vertical-align: middle;
+  font-size: 0;
+  li {
+    display: inline-block;
+    margin-right: 20px;
+    a {
+      padding: 0;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: $main-color;
+      &.active {
+        color: $active-color;
+      }
+      &:hover {
+        text-decoration: none;
+        color: $active-color;
+      }
+    }
+  }
+}
+
+.status {
+  float: right;
+  font-size: 0;
+  .status__offline, .status__online {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px;
+    width: 30px;
+    height: 30px;
+    border: 2px solid $active-color;
+    cursor: pointer;
+    @include border-radius(50%);
+    &.active:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 3px;
+      right: 3px;
+      bottom: 3px;
+      left: 3px;
+      background: $active-color;
+      @include border-radius(50%);
+    }
+  }
+  .status__offline {
+    border-color: $offline-color;
+    &.active:after {
+      background: $offline-color;
+    }
+  }
+ }
