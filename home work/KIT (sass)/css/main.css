@@ -17,13 +17,11 @@
 }
 
 .box-big {
-  padding: 0 20px;
-  line-height: 95px;
+  padding: 40px;
 }
 
 .box__nav {
   float: left;
-  vertical-align: middle;
   font-size: 0;
 }
 
@@ -84,4 +82,22 @@
 
 .status .status__offline.active:after {
   background: #f5694e;
+}
+
+.tooltip-inner {
+  width: 130px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  background-color: #3dcf7e;
+  padding: 10px 9px;
+  word-break: keep-all;
+}
+
+.tooltip.in {
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+.tooltip.top .tooltip-arrow {
+  border-top-color: #3dcf7e;
 }

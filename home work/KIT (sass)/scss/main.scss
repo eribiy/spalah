@@ -16,15 +16,14 @@
   background: $box-bg;
   @include border-radius($box-radius);
   @include box-shadow($shadow);
-  &-big {
-    padding: 0 20px;
-    line-height: 95px;
-  }
+}
+
+.box-big {
+  padding: $box-big-padding;
 }
 
 .box__nav {
   float: left;
-  vertical-align: middle;
   font-size: 0;
   li {
     display: inline-block;
@@ -78,3 +77,18 @@
     }
   }
  }
+.tooltip-inner {
+  width: 130px;
+  font-family: $main-font;
+  font-size: 13px;
+  background-color: $active-color;
+  padding: 10px 9px;
+  word-break: keep-all;
+}
+.tooltip.in {
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+.tooltip.top .tooltip-arrow {
+  border-top-color: $active-color;
+}
