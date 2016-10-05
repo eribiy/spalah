@@ -1,5 +1,6 @@
+//import
 @import "variables", "mixin";
-
+//---------main stiles--------------------------------------------------------
 .wrapper-main {
   background: $main-bg;
   font: 14px $main-font;
@@ -7,29 +8,39 @@
   .content {
     max-width: $main-width;
     margin: 50px auto;
-
+    padding: 0 10px;
   }
 }
 
 .box {
-  padding: $box-padding;
+  padding: $box-padding-vertical $box-padding-horizontal;
+  margin: 20px 0;
   background: $box-bg;
   @include border-radius($box-radius);
   @include box-shadow($shadow);
 }
 
 .box-big {
+  border-top: 3px solid $active-color;
   padding: $box-big-padding;
 }
 
-.box__nav {
-  float: left;
-  font-size: 0;
+.vertical-center {
+  display: inline-block;
+  vertical-align: middle;
+  word-spacing: $withoutspace;
+}
+
+//menu
+.menu {
   li {
     display: inline-block;
     margin-right: 20px;
+    &:last-child {
+      margin-right: 0;
+    }
     a {
-      padding: 0;
+      //vertical-align: middle;
       font-size: 14px;
       font-weight: 700;
       text-transform: uppercase;
@@ -45,14 +56,14 @@
   }
 }
 
+//menu end//
+//status
 .status {
-  float: right;
-  font-size: 0;
   .status__offline, .status__online {
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    margin: 0 5px;
+    margin: 0 3px;
     width: 30px;
     height: 30px;
     border: 2px solid $active-color;
@@ -62,10 +73,10 @@
       content: "";
       display: block;
       position: absolute;
-      top: 3px;
-      right: 3px;
-      bottom: 3px;
-      left: 3px;
+      top: 4px;
+      right: 4px;
+      bottom: 4px;
+      left: 4px;
       background: $active-color;
       @include border-radius(50%);
     }
@@ -76,19 +87,276 @@
       background: $offline-color;
     }
   }
- }
+}
+
+//status end//
+//tooltip settings (bootstrap)
 .tooltip-inner {
-  width: 130px;
   font-family: $main-font;
   font-size: 13px;
   background-color: $active-color;
   padding: 10px 9px;
   word-break: keep-all;
 }
+
 .tooltip.in {
   filter: alpha(opacity=100);
   opacity: 1;
 }
+
 .tooltip.top .tooltip-arrow {
   border-top-color: $active-color;
 }
+
+//tooltip settings (bootstrap) end//
+
+//profile
+.profile {
+  .avatar {
+    width: 60px;
+    height: 60px;
+    border: 5px solid #f2f2f2;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+}
+
+.profile__name {
+  line-height: normal;
+  word-spacing: normal;
+  .name {
+    text-transform: capitalize;
+    font-weight: 700;
+    color: $active-color;
+  }
+}
+//profile end//
+
+//icons with counts
+.icon-wrap {
+  word-spacing: $withoutspace;
+  a {
+    position: relative;
+  }
+  .icon {
+    width: 22px;
+    height: 22px;
+    margin-right: 20px;
+  }
+  .icon-settings {
+    background: url("../images/sprite.png") no-repeat -1px -1px;
+  }
+  .icon-alert {
+    background: url("../images/sprite.png") no-repeat -34px -1px;
+  }
+  .icon-calendar {
+    background: url("../images/sprite.png") no-repeat -68px -1px;
+  }
+  .icon-count {
+    display: inline-block;
+    position: absolute;
+    bottom: 7px;
+    left: 14px;
+    background: $active-color;
+    @include border-radius (8px);
+    padding: 0 5px;
+    height: 18px;
+    line-height: 18px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+  }
+}
+
+//icons with counts end//
+//input styles
+.input {
+  width: 100%;
+  line-height: normal;
+  border: 2px solid #eeeeee;
+  @include border-radius(5px);
+  padding: 8px;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  @include placeholder {
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #8c9c93;
+  }
+}
+//input styles end//
+//btn on input with icon
+.btn {
+  position: absolute;
+  top: calc(50% - 10px);
+  width: 20px;
+  height: 20px;
+  border: none;
+  padding: 0;
+}
+
+//btn on input with icon end//
+// button
+.button {
+  border: none;
+  @include border-radius(5px);
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+  background: $active-color;
+  height: 42px;
+}
+
+// button end//
+// button socials
+.btn-social {
+  border: none;
+  @include border-radius(5px);
+  width: 42px;
+  height: 42px;
+}
+
+// button end//
+//box title
+.box-title {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+//box title end//
+//---------main stiles end---//-----------------------------------------------------
+
+//-----------box menu---------------------------------------------------------
+.box-menu {
+  $current-height: 100px;
+  height: $current-height;
+  line-height: $current-height - 2 * $box-padding-vertical;
+  .status {
+    float: right;
+  }
+}
+
+.tooltip-inner {
+  width: 130px;
+}
+
+//-----------box menu-end---//-----------------------------------------------------
+
+//------------box notification bar-----------------------------------------------------------------
+.box-notifBar {
+  $current-height: 100px;
+  height: $current-height;
+  line-height: $current-height - 2 * $box-padding-vertical;
+}
+
+//icons with counts
+.icon-wrap {
+  float: right;
+}
+
+//icons with counts end
+//--------------box notafication bar alt---------------------------------------------------------
+.box-notifBarAlt {
+  $current-height: 60px;
+  height: $current-height;
+  line-height: $current-height - 2 * $box-padding-vertical;
+  word-spacing: -0.36em;
+  .avatar {
+    width: 20px;
+    height: 20px;
+    border: none;
+  }
+  .name {
+    font-size: 18px;
+  }
+  .menu {
+    position: relative;
+    margin: 0 60px;
+    &:after, &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 2px;
+      height: 40px;
+      top: calc(50% - 20px);
+      background: #eeeeee;
+    }
+    &:before {
+      left: -35px;
+    }
+    &:after {
+      right: -30px;
+    }
+  }
+}
+
+.search-wrap {
+  position: relative;
+  .inp-search {
+    width: 190px;
+  }
+  .btn-search {
+    right: 8px;
+    background: transparent url("../images/sprite.png") -102px 1px;
+  }
+}
+//--------------box notafication bar alt end //---------------------------------------------------------
+//----------box-login------------------------------------------------------
+.box-login {
+  .button {
+    width: 50%;
+  }
+  span {
+    font-family: "Arial", sans-serif;
+    font-style: italic;
+    text-transform: uppercase;
+    color: #8c9c93;
+    margin: 0 20px;
+  }
+  .btn-social {
+    margin-right: 5px;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+  p {
+    font-weight: 700;
+    &:before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 2px;
+      margin: 40px 0;
+      background: #eeeeee;
+    }
+    a {
+      text-transform: uppercase;
+      color: $active-color;
+    }
+  }
+
+}
+.inp-login {
+  background: url("../images/sprite.png") no-repeat 15px -43px;
+}
+
+.inp-password {
+  background: url("../images/sprite.png") no-repeat 13px -105px;
+}
+.inp-login, .inp-password {
+  margin-bottom: 16px;
+  padding-left: 40px;
+}
+.button-wrap {
+  word-spacing: $withoutspace;
+}
+.btn-twitter {
+  background: #25aae2 url("../images/sprite.png") no-repeat 12px -159px;
+}
+.btn-facebook {
+  background: #0f75bd url("../images/sprite.png") no-repeat 15px -215px;
+}
+//----------box-login end-//-----------------------------------------------------

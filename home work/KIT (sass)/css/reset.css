@@ -82,3 +82,6 @@ textarea {
 textarea {
     resize: none;
 }
+button:focus, input:focus {
+    outline: none;
+}

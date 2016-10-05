@@ -9,30 +9,117 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
           integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400i" rel="stylesheet">
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 <body>
 <div class="wrapper-main">
     <div class="container-fluid section_profile__wrapper ">
         <div class="container content">
-            <div class="raw">
-                <div class="col-lg-6">
-                    <div class="box box-big clearfix">
-                        <ul class="box__nav">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="box box-menu clearfix">
+                        <ul class="vertical-center menu">
                             <li><a href="#">PROFILE</a></li>
                             <li><a href="#" class="active">REQUESTS</a></li>
                             <li><a href="#">ELEMENTS</a></li>
                         </ul>
-                        <div class="status">
+                        <div class="vertical-center status">
                             <div class="status__offline"></div>
-                            <div class="status__online active" data-toggle="tooltip" data-placement="top" title="Appear as online"></div>
+                            <div class="status__online active" data-toggle="tooltip" data-placement="top"
+                                 title="Appear as online"></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="box .box--big"></div>
+                <div class="col-md-6">
+                    <div class="box box-notifBar clearfix">
+                        <div class="vertical-center profile">
+                            <a href="#">
+                                <img src="images/avatar.jpg" class="vertical-center avatar">
+                            </a>
+                            <div class="vertical-center profile__name">
+                                <span>logged in as</span>
+                                <a href="#">
+                                    <h4 class="name">Andrei Josan</h4>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="icon-wrap">
+                            <a href="#" class="">
+                                <i class="vertical-center icon icon-settings"></i>
+                            </a>
+                            <a href="#" class="">
+                                <i class="vertical-center icon icon-alert"></i>
+                                <span class="icon-count">4</span>
+                            </a>
+                            <a href="#" class="">
+                                <i class="vertical-center icon icon-calendar"></i>
+                                <span class="icon-count">21</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="box box-notifBarAlt clearfix">
+                        <div class="vertical-center profile">
+                            <a href="#">
+                                <img src="images/avatar.jpg" class="vertical-center avatar">
+                            </a>
+                            <div class="vertical-center profile__name">
+                                <a href="#">
+                                    <h4 class="name">Andrei Josan</h4>
+                                </a>
+                            </div>
+                        </div>
+                        <ul class="vertical-center menu">
+                            <li><a href="#">PROFILE</a></li>
+                            <li><a href="#" class="active">REQUESTS</a></li>
+                            <li><a href="#">ELEMENTS</a></li>
+                        </ul>
+                        <form class="vertical-center search-wrap">
+                            <input type="search" placeholder="search..." class="input inp-search">
+                            <button class="btn btn-search"></button>
+                        </form>
+                        <div class="vertical-center icon-wrap">
+                            <a href="#">
+                                <i class="vertical-center icon icon-settings"></i>
+                            </a>
+                            <a href="#">
+                                <i class="vertical-center icon icon-alert"></i>
+                                <span class="icon-count">4</span>
+                            </a>
+                            <a href="#">
+                                <i class="vertical-center icon icon-calendar"></i>
+                                <span class="icon-count">21</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="box box-big box-login">
+                        <h3 class="box-title">ACCESS ACCOUNT</h3>
+                        <form class="form">
+                            <input type="text" class="input inp-login">
+                            <input type="password" class="input inp-password">
+                            <div class="button-wrap clearfix">
+                                <button class="button btn-login vertical-center">login</button>
+                                <span class="vertical-center">or</span>
+                                <button class="btn-social btn-twitter vertical-center"></button>
+                                <button class="btn-social btn-facebook vertical-center"></button>
+                            </div>
+                        </form>
+                        <p class="">Forgot password
+                            <a class="" href="#">REGISTER</a>
+                            new account</p>
+                    </div>
+                </div>
+                <div class="col-md-7">
 
+                </div>
             </div>
         </div>
     </div>
