@@ -62,7 +62,9 @@ table {
 a {
     text-decoration: none;
 }
-a:hover {
+a:hover,
+a:visited,
+a:focus {
     text-decoration: none;
 }
 

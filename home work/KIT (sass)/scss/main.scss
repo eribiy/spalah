@@ -58,34 +58,33 @@
 
 //menu end//
 //status
-.status {
-  .status__offline, .status__online {
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0 3px;
-    width: 30px;
-    height: 30px;
-    border: 2px solid $active-color;
-    cursor: pointer;
+.status__offline, .status__online {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 3px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid $active-color;
+  cursor: pointer;
+  @include border-radius(50%);
+  &.active:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    bottom: 4px;
+    left: 4px;
+    background: $active-color;
     @include border-radius(50%);
-    &.active:after {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 4px;
-      right: 4px;
-      bottom: 4px;
-      left: 4px;
-      background: $active-color;
-      @include border-radius(50%);
-    }
   }
-  .status__offline {
-    border-color: $offline-color;
-    &.active:after {
-      background: $offline-color;
-    }
+}
+
+.status__offline {
+  border-color: $offline-color;
+  &.active:after {
+    background: $offline-color;
   }
 }
 
@@ -130,6 +129,7 @@
     color: $active-color;
   }
 }
+
 //profile end//
 
 //icons with counts
@@ -182,9 +182,26 @@
     font-family: "Lato", sans-serif;
     font-size: 14px;
     text-transform: capitalize;
-    color: #8c9c93;
+    color: $placeholder-color;
   }
 }
+
+.inp-login, .inp-password, .inp-mail {
+  padding-left: 40px;
+}
+
+.inp-login {
+  background: url("../images/sprite.png") no-repeat 15px -43px;
+}
+
+.inp-password {
+  background: url("../images/sprite.png") no-repeat 13px -105px;
+}
+
+.inp-mail {
+  background: url("../images/sprite.png") no-repeat 12px -297px;
+}
+
 //input styles end//
 //btn on input with icon
 .btn {
@@ -209,17 +226,39 @@
 }
 
 // button end//
+
 // button socials
 .btn-social {
   border: none;
   @include border-radius(5px);
   width: 42px;
   height: 42px;
+  margin-right: 5px;
+  &:last-of-type {
+    margin-right: 0;
+  }
 }
 
-// button end//
+.btn-twitter {
+  background: #25aae2 url("../images/sprite.png") no-repeat 12px -159px;
+}
+
+.btn-facebook {
+  background: #0f75bd url("../images/sprite.png") no-repeat 15px -215px;
+}
+
+.btn-google {
+  background: #e62c2c url("../images/sprite.png") no-repeat 14px -365px;
+}
+
+.btn-add {
+  background: #eeeeee url("../images/sprite.png") no-repeat 13px -417px;
+}
+// button socials end//
+
 //box title
 .box-title {
+  margin-bottom: 40px;
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
@@ -227,6 +266,38 @@
 }
 
 //box title end//
+//progress Bar
+.progressBar-wrapper {
+  font-weight: 700;
+  margin-bottom: 15px;
+  .progressBar-name {
+    display: inline-block;
+    margin-bottom: 8px;
+  }
+  .progressBar-index {
+    float: right;
+    display: inline-block;
+    color: $active-color;
+    margin-bottom: 8px;
+    span {
+      display: inline-block;
+      color: $main-color;
+    }
+  }
+  .progressBar-bg {
+    width: 100%;
+    height: 20px;
+    background: #eeeeee;
+    @include border-radius(4px);
+  }
+  .progressBar {
+    height: 20px;
+    background: $active-color;
+    @include border-radius(4px);
+  }
+}
+
+//progress Bar end//
 //---------main stiles end---//-----------------------------------------------------
 
 //-----------box menu---------------------------------------------------------
@@ -303,9 +374,13 @@
     background: transparent url("../images/sprite.png") -102px 1px;
   }
 }
+
 //--------------box notafication bar alt end //---------------------------------------------------------
 //----------box-login------------------------------------------------------
 .box-login {
+  .input {
+    margin-bottom: 16px;
+  }
   .button {
     width: 50%;
   }
@@ -313,15 +388,10 @@
     font-family: "Arial", sans-serif;
     font-style: italic;
     text-transform: uppercase;
-    color: #8c9c93;
+    color: $placeholder-color;
     margin: 0 20px;
   }
-  .btn-social {
-    margin-right: 5px;
-    &:last-of-type {
-      margin-right: 0;
-    }
-  }
+
   p {
     font-weight: 700;
     &:before {
@@ -337,26 +407,127 @@
       color: $active-color;
     }
   }
-
-}
-.inp-login {
-  background: url("../images/sprite.png") no-repeat 15px -43px;
 }
 
-.inp-password {
-  background: url("../images/sprite.png") no-repeat 13px -105px;
-}
-.inp-login, .inp-password {
-  margin-bottom: 16px;
-  padding-left: 40px;
-}
 .button-wrap {
   word-spacing: $withoutspace;
 }
-.btn-twitter {
-  background: #25aae2 url("../images/sprite.png") no-repeat 12px -159px;
-}
-.btn-facebook {
-  background: #0f75bd url("../images/sprite.png") no-repeat 15px -215px;
-}
+
 //----------box-login end-//-----------------------------------------------------
+//----------box register-----------------------------------------------------------
+.box-register {
+  padding-bottom: 65px;
+  .form {
+    word-spacing: $withoutspace;
+  }
+  .input {
+    width: 48%;
+    margin-bottom: 16px;
+    &:nth-child(odd) {
+      margin-right: 16px;
+    }
+    @include placeholder {
+      font-family: "Montserrat", sans-serif;
+      font-size: 14px;
+      text-transform: lowercase;
+      color: $placeholder-color;
+    }
+  }
+  span, p, a {
+    word-spacing: normal;
+  }
+  .progressBar-bg {
+    height: 8px;
+  }
+  .progressBar {
+    height: 8px;
+  }
+  .progressBar-password {
+    width: 77%;
+  }
+  .button-wrap {
+    margin-top: 37px;
+    [type="checkbox"] {
+      margin: 0 5px 0 0;
+      position: relative;
+      top: -19px;
+    }
+    label {
+      max-width: 225px;
+      line-height: 22px;
+      word-spacing: normal;
+      a {
+        color: $active-color;
+      }
+    }
+    .button {
+      float: right;
+      width: 210px;
+    }
+  }
+}
+
+//----------box register end //----------------------------------------------------
+//----------box skills----------------------------------------------------
+.box-skills {
+  .progressBar-name {
+    color: $placeholder-color;
+  }
+  .progressBar-photoshop {
+    width: 90%;
+  }
+  .progressBar-illustrator {
+    width: 65%;
+  }
+  .progressBar-html {
+    width: 75%;
+  }
+  .progressBar-php {
+    width: 40%;
+  }
+}
+
+//----------box skills end //----------------------------------------------------
+//----------box profile ----------------------------------------------------
+.box-profile {
+  .profile {
+      position: relative;
+    text-align: center;
+  }
+  .profile-line {
+    position: absolute;
+    top: -10px;
+    left: calc(50% - 70px);
+  }
+  .avatar {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+  }
+  .status__online {
+    background: #fff;
+    position: absolute;
+    top: 10px;
+    left: calc(50% + 25px);
+  }
+  .profile__name {
+    margin: 10px 0 20px;
+  }
+  .name {
+    text-align: center;
+    font-size: 24px;
+  }
+  h3 {
+    text-align: center;
+    font-weight: 700;
+  }
+  .form {
+    margin-bottom: 5px;
+  }
+  .link {
+    color: $active-color;
+    font-weight: 700;
+  }
+}
+
+//----------box profile end //----------------------------------------------------
