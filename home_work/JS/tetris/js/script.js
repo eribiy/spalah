@@ -61,7 +61,6 @@ window.onload = function (e) {
                 cube.move("west");
                 break;
             case 115 :
-                for
                 setInterval(cube.move("south"), 1000);
                 break;
             case 100 :
