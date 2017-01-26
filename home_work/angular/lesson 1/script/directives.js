@@ -3,4 +3,10 @@
  */
 var app = angular.module("myApp");
 
-app.directive("")
+app.directive("modal", function() {
+    return {
+        restrict: "M",
+        replace: true,
+        template: "<div><h1>This is modal window</h1></div>"
+    };
+});
