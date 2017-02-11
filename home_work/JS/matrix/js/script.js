@@ -32,7 +32,7 @@ function generate_matrix_random(M, N) {
     return A1;
 }
 
-// var A1 = generate_matrix_random(4, 4);
+var A = generate_matrix(4, 4);
 display_matrix(A);
 var B = submatrix_replace(A,
     2, 0, 3, 1,
@@ -73,3 +73,4 @@ function display_matrix(A) {
 function find_submatrix(A) {
     return A;
 }
+
