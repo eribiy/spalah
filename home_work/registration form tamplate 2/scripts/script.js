@@ -1,10 +1,7 @@
 /**
  * Created by user on 15.02.2017.
  */
-function validateForm() {
-    
-}
-/*
+
 function showError(container, errorMessage) {
     container.className = 'error';
     var msgElem = document.createElement("span");
@@ -45,5 +42,4 @@ function validateForm(form) {
         showError(elems.checkbox.parentNode, "<br>* You must agree")
     }
 }
-*/
 
