@@ -109,10 +109,16 @@ li:last-child {
     cursor: pointer;
 }
 
-/*.error input {
-    border: 2px solid red;
-}*/
+input:required:valid {
+    border-color: green;
+}
 
-.error-message {
+.error {
+    display: inline-block;
+    margin: 10px 0 0 20px;
+    font-size: 14px;
     color: red;
+}
+.errorInp {
+    border: 2px solid  red;
 }
