@@ -1,0 +1,38 @@
+<!DOCTYPE>
+<html ng-app="myApp">
+<link href="sryles/styles.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<style>
+    input[name=myAddress].ng-invalid {
+        background-color: lightcoral;
+    }
+    input[name=myAddress].ng-valid {
+        background-color: lightgreen;
+    }
+</style>
+<body>
+<!--The ng-model Directive, Two-Way Binding-->
+<div ng-controller="nameCtrl">
+    <input ng-model="name">
+    <h1>Entered name: {{ name }}</h1>
+    <h2 ng-bind="name"></h2>
+</div>
+
+
+<!--Validate User Input-->
+<form name="myForm" ng-init="email='petya@rambler.com'">
+    Email:
+    <input type="email" name="myAddress" ng-model="email" required>
+    <span ng-show="myForm.myAddress.$error.email">Not a valid e-mail address</span>
+    <h2>status</h2>
+    valid: {{ myForm.myAddress.$valid }}<br>
+    <span>dirty: <span ng-bind="myForm.myAddress.$dirty"></span></span> <br>
+    <span>touched: <span ng-bind="myForm.myAddress.$touched"></span></span>
+</form>
+
+<script src="script/script.js"></script>
+<script src="script/modules.js"></script>
+<script src="script/controllers.js"></script>
+<script src="script/directives.js"></script>
+</body>
+</html>
