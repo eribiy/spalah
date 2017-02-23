@@ -82,9 +82,12 @@ body {
 .login {
     display: none;
 }
-/*.register {
+/*
+.register {
     display: none;
-}*/
+}
+*/
+
 .arrow_box:after {
     border-color: rgba(254, 254, 254, 0);
     border-bottom-color: #fefefe;
