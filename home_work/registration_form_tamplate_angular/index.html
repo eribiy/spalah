@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    </head>
+<body>
+<div class="wrapper">
+    <div class="regForm">
+        <h3 class="formTitle">Sign up for your Account</h3>
+        <span class="formSubTitle">This is Photoshop's version  of Lorem Ipsum velit auctor aliquet.</span>
+        <form name="formReg" id="formReg"
+              action="http://localhost/spalah/home_work/registration%20form%20tamplate%201/action.php" method="POST" ng-app="myApp" ng-controller="validateCtrl" novalidate>
+            <ul>
+                <li><label class="label" for="email">email</label></li>
+                <li>
+                    <input class="input" name="email" type="email" id="email" value=""  ng-model="email" required>
+                    <span class="error" ng-show="formReg.email.$touched  && formReg.email.$invalid">
+                        <span ng-show="formReg.email.$error.required">* Enter your email</span>
+                        <span ng-show="formReg.email.$error.email">* Invalid email address</span>
+                    </span>
+                </li>
+                <li><label class="label" for="name">username</label></li>
+                <li><input class="input" name="name" type="text" id="name" value=""></li>
+                <li><label class="label" for="password1">password</label></li>
+                <li>
+                    <input class="input" name="password1" type="password" id="password1" value="" ng-model="password1" required>
+                    <span class="error" ng-show="formReg.password1.$touched && formReg.password1.$invalid">
+                        <span ng-show="formReg.password1.$error.required">* Enter your password</span>
+                    </span>
+                </li>
+                <li><label class="label" for="password2">confirm password</label></li>
+                <li>
+                    <input class="input" name="password2" type="password" id="password2" value="" ng-model="password2" required>
+                    <span class="error" ng-show="formReg.password2.$touched && formReg.password2.$invalid">
+                        <span ng-show="formReg.password2.$error.required">* Enter your password again</span>
+                    </span>
+                </li>
+                <li class="clearfix">
+                    <input class="checkbox" name="checkbox" id="checkbox" type="checkbox" value="" ng-model="checkbox" required>
+                    <span class="error errCbx" ng-show="formReg.checkbox.$touched && formReg.checkbox.$invalid">
+                        <span ng-show="formReg.checkbox.$error.required">* Mark the checkbox</span>
+                    </span>
+                    <label class="labelCheckbox" for="checkbox">I have read and agreed with the </label>
+                    <a class="link" href="#">terms and conditions</a>
+                    <input class="btn" type="submit" name="sign" value="sign up" ng-disabled="formReg.email.$invalid">
+                </li>
+            </ul>
+        </form>
+    </div>
+</div>
+<script src="scripts/script.js"></script>
+</body>
+</html>

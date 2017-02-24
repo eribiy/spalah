@@ -23,17 +23,21 @@
     font-weight: 600;
 
 }
+
 form {
     margin-top: 48px;
 }
+
+ul, li {
+    position: relative;
+}
+
 li:nth-child(odd) {
     margin: 48px 0 18px;
 }
+
 li:first-child {
     margin: 0 0 18px;
-}
-li:last-child {
-    margin: 48px 0 0;
 }
 
 .label {
@@ -57,35 +61,13 @@ li:last-child {
 }
 
 .checkbox {
-    display: none;
+ cursor: pointer;
 }
 
 .labelCheckbox, .link {
     font-size: 17px;
     line-height: 73px;
-}
-
-.labelCheckbox:before {
-    content: "";
-    display: inline-block;
-    height: 18px;
-    width: 18px;
-    margin: 0 28px 0 0;
-    background: url(../images/sprite.png) no-repeat;
-    background-position: -38px -260px;
     cursor: pointer;
-}
-
-.checkbox:checked + label::before {
-    background-position: -114px -260px;
-}
-
-.checkbox:disabled + label::before {
-    background-position: -152px -260px;
-}
-
-.checkbox:checked:disabled + label::before {
-    background-position: -171px -260px;
 }
 
 .link {
@@ -104,15 +86,32 @@ li:last-child {
     width: 180px;
     height: 73px;
 }
+
 .btn:hover {
     background: #FF4C4C;
     cursor: pointer;
 }
 
-/*.error input {
-    border: 2px solid red;
-}*/
+input:required:valid {
+    border-color: green;
+}
 
-.error-message {
+.error {
+    position: absolute;
+    left: 5px;
+    bottom: -20px;
+    font-size: 14px;
     color: red;
+}
+
+.errCbx {
+    bottom: 10px;
+}
+
+.errorInp {
+    border-color: red;
+}
+
+.sucsess {
+    border-color: green;
 }
