@@ -101,9 +101,6 @@ input:required:valid {
 }
 
 .error {
-    position: absolute;
-    left: 5px;
-    bottom: -20px;
     font-size: 14px;
     color: red;
 }
