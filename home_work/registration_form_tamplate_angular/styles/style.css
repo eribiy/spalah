@@ -92,12 +92,22 @@ li:first-child {
     cursor: pointer;
 }
 
+
 .btn:disabled {
     opacity: 0.5;
+    cursor: auto;
+}
+
+.btn:disabled:hover {
+    background: #ec4949;
 }
 
 input:required:valid {
     border-color: green;
+}
+
+input.ng-dirty {
+    border-color: red;
 }
 
 .error {
@@ -106,13 +116,6 @@ input:required:valid {
 }
 
 .errCbx {
-    bottom: 10px;
-}
-
-.errorInp {
-    border-color: red;
-}
-
-.sucsess {
-    border-color: green;
+    position: relative;
+    bottom: 20px;
 }
