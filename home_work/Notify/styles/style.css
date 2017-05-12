@@ -5,14 +5,18 @@
 }
 
 .header_bg {
-    background-image: url("../images/head.png");
+    background: url("../images/head.png") no-repeat center;
     background-size: cover;
-    height: 600px;
+    height: 75vh;
+}
+
+.center {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 10px;
 }
 
 .header {
-    width: 1200px;
-    margin: 0 auto;
     padding: 170px 0 0 120px;
 }
 
@@ -75,12 +79,6 @@
     background: #ffffff;
 }
 
-.center {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 60px 10px;
-}
-
 .content {
     display: flex;
     justify-content: space-between;
@@ -89,7 +87,8 @@
 
 .column {
     display: inline-block;
-    width: 330px;
+    /*width: 330px;*/
+    width: 28%;
 }
 
 .icon_big {
@@ -127,10 +126,18 @@
 .video_bg {
     background: #e3e3e3;
 }
+.video_content_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
 
 .content_video {
-    float: left;
-    width: 540px;
+    /*display: inline-block;*/
+   /* vertical-align: top;*/
+    /*width: 540px;*/
+    width: 48%;
+    padding: 0 2%;
 }
 
 .content_video .h3 {
@@ -156,7 +163,8 @@
     border: 1px solid #c8c8c8;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    width: 305px;
+    /*width: 305px;*/
+    width: 68%;
     height: 56px;
     font-family: "Myriad Pro Regular", sans-serif;
     font-size: 18px;
@@ -265,7 +273,8 @@
 .button {
     display: inline-block;
     vertical-align: middle;
-    width: 140px;
+    /*width: 140px;*/
+    width: 32%;
     height: 56px;
     background: #2ecc71;
     border: none;
@@ -281,15 +290,16 @@
 
 /*FORM END*/
 .wrap_video {
-    float: right;
     overflow: hidden;
     border: 1px solid #000000;
     border-radius: 7px;
+    width: 48%;
 }
 
 .video {
-    width: 500px;
+    /*width: 500px;*/
     height: 307px;
+    width: 100%;
 }
 
 .quotes_bg {
@@ -297,18 +307,14 @@
     background: #ffffff;
 }
 
-.quotes_bg .center {
-    padding: 60px 10px 25px;
-}
-
 .quotes_wrap {
-
+    padding: 60px 10px 25px;
 }
 
 /*SLIDER*/
 
 .text1, .text2, .text3, .text4, .text5, .text6, .text7, .text8, .text9, .text10 {
-    width: 860px;
+    max-width: 860px;
     margin: 0 auto;
     text-align: center;
 }
@@ -335,11 +341,18 @@
     text-transform: capitalize;
 }
 
-.wrap_slider, .slick-initialized, .slick-slider {
-    width: 100%;
+
+.bx-wrapper {
+    position: relative;
+    -moz-box-shadow: none;
+     -webkit-box-shadow: none;
+     box-shadow: none;
+    border: none;
+    background: transparent;
+    margin-bottom: 0;
 }
 
-.wrap_slider:before {
+.bx-wrapper:before {
     content: "";
     position: absolute;
     width: 50px;
@@ -350,20 +363,20 @@
     z-index: 10;
 }
 
-.wrap_slider:after {
+.bx-wrapper:after {
     content: "";
     position: absolute;
-    width: 50px;
+    width: 70px;
     height: 50px;
     top: 0;
-    right: 0;
+    right: -5px;
     background: linear-gradient(to left, #ffffff 0%, #ffffff 50%, transparent);
 }
 
 .wrap_img {
     position: relative;
-    width: 50px;
-    height: 50px;
+    max-width: 50px;
+    max-height: 50px;
     margin-left: 8px;
     box-sizing: content-box;
     background: #2ecc71;
@@ -387,8 +400,6 @@
 /*SLIDER END*/
 
 .wrap_contact {
-    width: 1200px;
-    margin: 0 auto;
     padding: 25px 10px 60px;
 }
 
@@ -445,4 +456,79 @@ footer.center {
 
 .nav:hover {
     color: #2ecc71;
+}
+
+@media screen and (max-width: 900px) {
+    .video {
+        height: 260px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .column {
+        display: block;
+        width: 50%;
+        margin: 20px auto;
+    }
+    .column:first-child {
+        margin-top: 0;
+    }
+    .column:last-child {
+        margin-bottom: 0;
+    }
+    .video_content_wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content_video {
+        width: 90%;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+    .wrap_video {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .video {
+        height: 307px;
+        width: 100%;
+    }
+
+    .quotes_wrap {
+        padding: 60px 20px 25px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .header {
+        padding: 170px 0 0 10%;
+    }
+    .content_header {
+        width: 390px;
+    }
+    .logo {
+        font-size: 49px;
+    }
+    .slogan {
+        font-size: 18px;
+    }
+    .wrapper_nav {
+        text-align: left;
+    }
+    .nav {
+        display: block;
+        padding: 5px 18px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .content_header {
+        width: 320px;
+    }
 }

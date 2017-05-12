@@ -24,7 +24,7 @@ $(document).ready(function () {
             createErrorElement("#email", "<span>* Enter your email</span>");
             valid = false;
         } else {
-            if (!$("#email").val().match(/(\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,6})/)) {
+            if (!$("#email").val().match(/[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/)) {
                 createErrorElement("#email", "<span>* Email is wrong</span>");
                 valid = false;
             } else {

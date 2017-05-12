@@ -1,0 +1,66 @@
+.wrapper-page {
+
+}
+.person-page {
+    width: 490px;
+    margin: 0 auto;
+    padding: 24px 20px 34px;
+    background: #f38181;
+    font: 13px "Arial", sans-serif;
+    color: #333333;
+}
+.person {
+
+}
+.photo {
+    width: 120px;
+    height: 120px;
+    float: left;
+    margin-right: 12px;
+}
+.person-name {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+}
+.position {
+    font-size: 10px;
+    color: #808080;
+}
+.person__info_theme_block {
+    background: #fffbc8;
+    border: 1px solid #cbc6bb;
+    border-radius: 5px;
+    padding: 10px 15px 10px 47px;
+    margin-top: 10px;
+
+}
+.services {
+    float: right;
+    width: 70%;
+}
+.services__row {
+    width: 100%;
+}
+.column {
+    display: inline-block;
+}
+.column-degree {
+    width: 65%;
+    position: relative;
+}
+.column-count {
+    width: 33%;
+    text-align: center;
+}
+.column-degree:before {
+    content: "";
+    display: block;position: absolute;
+    left: 0;
+    width: 50px;
+    height: 10px;
+    z-index: -1;
+    background: #b1e19b;
+
+}
