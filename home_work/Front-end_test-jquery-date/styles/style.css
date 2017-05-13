@@ -71,7 +71,7 @@
     background: #b2b2b2;
     opacity: 0.5;
     left: 0;
-    top: 42px;
+    top: calc(85px / 2);
 }
 
 th:first-child, td:first-child {

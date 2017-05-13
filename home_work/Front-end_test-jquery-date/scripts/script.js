@@ -4,8 +4,13 @@
 
 var addComment = function() {
     var comment = $("#create-comments-txt").val();
-    moment.locale('ru');
-    var fullDate = moment().format('D MMMM  YYYY');
+    var currentDate = new Date();
+    var options = {
+        day: 'numeric',
+        month: 'long'
+    };
+    var year = currentDate.getFullYear();
+    var fullDate = currentDate.toLocaleDateString('ru', options) + ' ' + year;
     if (comment) {
         $('#new_comment .comment__name').text('Username');
         $('#new_comment .comment__date').text(fullDate);
@@ -15,7 +20,7 @@ var addComment = function() {
         $("#create-comments-txt").val("");
     }
     return false;
-};
+}
 
 $(document).ready(function() {
     $('.create-comments-form').submit(addComment);

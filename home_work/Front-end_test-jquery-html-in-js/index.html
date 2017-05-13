@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Frontend-test</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <title>Page</title>
+    <!--<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">-->
     <link href="styles/reset.css" rel="stylesheet">
     <link href="styles/style.css" rel="stylesheet">
 </head>
@@ -15,7 +14,7 @@
             <div class="person clearfix">
                 <div class="person-photo person-photo_layout">
                     <a href="#">
-                        <img class="person-photo__img" alt="Вероника Ростова" src="images/photo.png">
+                        <img class="person-photo__img" src="images/photo.png">
                     </a>
                 </div>
                 <div class="person-info person-info_layout">
@@ -23,7 +22,8 @@
                     <h4 class="person-info__position">менеджер по продажам</h4>
                 </div>
                 <div class="person-phrase person-phrase_layout">
-                    <p class="person-phrase__text">Подберу для вас самые лучшие предложения. Мои услуги абсолютно беспатны</p>
+                    <p class="person-phrase__text">Подберу для вас самые лучшие предложения. Мои услуги
+                        абсолютно беспатны</p>
                 </div>
             </div>
             <div class="services services_layout clearfix">
@@ -66,12 +66,10 @@
                     <a href="#"><span class="comments-head-nav__all-comments">все отзывы</span></a>
                 </div>
                 <div class="response">
-                    <div class="likes likes_layout">
-                        <span class="response__count">131</span>
-                    </div>
-                    <div class="messages messages_layout">
-                        <span class="response__count">14</span>
-                    </div>
+                    <div class="likes"><input class="likes__btn likes__btn_layout" type="submit" value=""><span
+                            class="response__count">131</span></div>
+                    <div class="messages"><input class="likes__btn messages__btn" type="submit" value=""><span
+                            class="response__count">14</span></div>
                 </div>
             </div>
             <div class="comment comment_layout">
@@ -84,37 +82,27 @@
             <div class="comment comment_layout">
                 <span class="comment__name comment__name_layout">Лилия Семёновна</span>
                 <span class="comment__date">14 октября 2011</span>
-                <div class="comment__text comment__text_layout">
-                    <p>Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно стабилизирует кинетический момент, это и есть всемирно известный центр огранки алмазов и торговли бриллиантами?</p>
-                </div>
+                <div class="comment__text comment__text_layout"><p>Вероника, здравствуйте! Есть такой вопрос: Особый вид
+                    куниц жизненно стабилизирует кинетический момент, это и есть всемирно известный центр огранки
+                    алмазов и торговли бриллиантами?</p></div>
             </div>
             <div class="comment comment_layout">
                 <span class="comment__name comment__name_layout">Лилия Семёновна</span>
                 <span class="comment__date">14 октября 2011</span>
-                <div class="comment__text comment__text_layout">
-                    <p>Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно стабилизирует кинетический момент?</p>
-                </div>
-            </div>
-            <div id="new_comment">
-                <div class="comment comment_layout">
-                    <span class="comment__name comment__name_layout"></span>
-                    <span class="comment__date"></span>
-                    <div class="comment__text comment__text_layout">
-                        <p></p>
-                    </div>
-                </div>
+                <div class="comment__text comment__text_layout"><p>Вероника, здравствуйте! Есть такой вопрос: Особый вид
+                    куниц жизненно стабилизирует кинетический момент?</p></div>
             </div>
         </div>
     </div>
     <div class="create-comments">
         <form class="create-comments-form">
             <textarea id="create-comments-txt" class="create-comments-form__textarea"></textarea>
-            <input id="add-comment" type="submit" class="create-comments-form__submit create-comments-form__submit_layout" value="Написать консультанту">
+            <input id="add-comment" type="button" class="create-comments-form__submit create-comments-form__submit_layout"
+                   value="Написать консультанту">
         </form>
     </div>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="scripts/jquery-1.12.4.min.js"></script>
 <script type="text/javascript" src="scripts/script.js"></script>
-<script type="text/javascript" src="scripts/moment-with-locales.min.js"></script>
 </body>
 </html>
